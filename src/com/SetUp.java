@@ -1,8 +1,11 @@
 package com;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class SetUp {
+
+    //----------------------------check placement of the ship for viability-------------------------
 
     private static boolean checkIfWithinSeaBoundary(int x, int y, String[][] sea, int size, int position) {
         switch (position) {
@@ -76,7 +79,7 @@ public class SetUp {
         return true;
     }
 
-    private static boolean checkBehind(int x, int y, String[][] sea, int position) {
+    private static boolean checkBehindShipPlacement(int x, int y, String[][] sea, int position) {
         switch (position) {
             case 1:
                 if ((x - 1 >= 0)) {
@@ -115,7 +118,7 @@ public class SetUp {
         return true;
     }
 
-    private static boolean checkBefore(int x, int y, String[][] sea, int position) {
+    private static boolean checkBeforeShipPlacement(int x, int y, String[][] sea, int position) {
         switch (position) {
             case 1:
                 if ((x + 1 <= (sea.length - 1))) {
@@ -154,9 +157,9 @@ public class SetUp {
         return true;
     }
 
-    private static boolean checkAround(int x, int y, String[][] sea, int size, int position) {  // dla x, dla pos = 1, poziom
-        if (checkBefore(x, y, sea, position)) {
-            if (checkBehind(x, y, sea, position)) {
+    private static boolean checkAroundPlacementOfShip(int x, int y, String[][] sea, int size, int position) {  // dla x, dla pos = 1, poziom
+        if (checkBeforeShipPlacement(x, y, sea, position)) {
+            if (checkBehindShipPlacement(x, y, sea, position)) {
                 if (checkAdjacentPlaces(x, y, sea, size, position)) {
                     return true;
                 }
@@ -165,10 +168,10 @@ public class SetUp {
         return false;
     }
 
-    private static boolean checkPosition(int x, int y, String[][] sea, int size, int position) {
+    public static boolean checkPosition(int x, int y, String[][] sea, int size, int position) {
         if (checkIfWithinSeaBoundary(x, y, sea, size, position)) {
             if (checkIfExactPositionIsViable(x, y, sea, size, position)) {
-                if (checkAround(x, y, sea, size, position)) {
+                if (checkAroundPlacementOfShip(x, y, sea, size, position)) {
                     return true;
                 }
             }
@@ -176,44 +179,64 @@ public class SetUp {
         return false;
     }
 
-    private static void initialSetUp() {
+    //-----------------------set up-------------------------------
+
+    private static void initialSetUp(int size, String[][] sea) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj pozycję statku (x, y) - od 0 do 9.");
+        System.out.println("Podaj pozycję statku (x, y) - od 0 do " + (sea.length - 1) + " dla " + size + "-masztowca.");
         int x = sc.nextInt();
         int y = sc.nextInt();
         System.out.println("Podaj położenie statku:" + "\n" + "1 - poprzeczna (x)," + "\n" + "2 - pionowa (y).");
         int position = sc.nextInt();
-        System.out.println("Podaj wielkość statku - od 1 do 4.");
-        int size = sc.nextInt();
-    }
+    } // for a player
 
-    public static void secondarySetUp(String[][] sea) {
+    private static Ship shipGenerator(int size, String[][] sea) {
+        Random random = new Random(sea.length);
+        int x = random.nextInt();
+        int y = random.nextInt();
+        Random r = new Random();
+        int position;
+        if (r.nextBoolean()) {
+            position = 1;
+        } else {
+            position = 2;
+        }
+        return new Ship(x,y,size,position);
+    } // for virtual player
+
+    public static Ship checkAndSet(String[][] sea) {
         int x = -1;
         int y = -1;
         int size = -1;
         int position = -1;
         while (!SetUp.checkPosition(x, y, sea, size, position)) {
-            SetUp.initialSetUp();
+            SetUp.initialSetUp(size, sea);
         }
-    } // for a player
+        return new Ship(x,y,size,position);
+    }
 
-    public static void shipPlacement(int x, int y, String[][] sea, int size, int position, Player player) {
-        Ship ship = new Ship(x, y, size, position);
+    public static void shipPlacement(Ship ship, Player player) {
         player.setShip(ship);
-        switch (position) {
+        int x = ship.getStartingPositionX();
+        int y = ship.getStartingPositionY();
+        switch (ship.getPosition()) {
             case 1:
-                for (int i = 0; i < size; i++) {
-                    sea[x][y] = "o";
+                for (int i = 0; i < ship.getSize(); i++) {
+                    player.getSea()[x][y] = "o";
                     ++x;
                 }
                 break;
 
             case 2:
-                for (int i = 0; i < size; i++) {
-                    sea[x][y] = "o";
+                for (int i = 0; i < ship.getSize(); i++) {
+                    player.getSea()[x][y] = "o";
                     ++y;
                 }
                 break;
         }
+    }
+
+    public static void seaPopulation(){
+
     }
 }

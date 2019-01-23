@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="" />
+    <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/tests/SettingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeaBattle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SeaBattle.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SetUp.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,31 +25,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="215" column="22" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="22" />
+            <state relative-caret-position="328">
+              <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
               <folding>
-                <element signature="method#checkIfWhithinSeaBoundary#0;class#SetUp#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#checkIfWithinSeaBoundary#0;class#SetUp#0" />
                 <element signature="method#checkIfExactPositionIsViable#0;class#SetUp#0" />
-                <element signature="method#checkIfWhithinSeaBoundary#1;class#SetUp#0" />
+                <element signature="method#checkAdjacentPlaces#0;class#SetUp#0" />
                 <element signature="method#checkBehind#0;class#SetUp#0" />
-                <element signature="method#checkBehind#1;class#SetUp#0" />
-                <element signature="method#checkArouund#0;class#SetUp#0" />
+                <element signature="method#checkBefore#0;class#SetUp#0" />
+                <element signature="method#checkAround#0;class#SetUp#0" />
                 <element signature="method#checkPosition#0;class#SetUp#0" />
-                <element signature="method#initialSetUp#0;class#SetUp#0" />
-                <element signature="method#secondarySetUp#0;class#SetUp#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="107">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#296#297#0" expanded="true" />
@@ -54,19 +58,21 @@
                 <element signature="e#465#466#0" expanded="true" />
                 <element signature="e#513#514#0" expanded="true" />
                 <element signature="e#550#551#0" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#811#812#0" expanded="true" />
-                <element signature="e#847#848#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#979#980#0" expanded="true" />
+                <element signature="e#593#594#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#176#177#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/Status.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -84,14 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="e#581#582#0" expanded="true" />
-                <element signature="e#612#613#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="328">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
         </entry>
@@ -106,6 +106,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -113,17 +116,19 @@
         <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/Status.java" />
         <option value="$PROJECT_DIR$/src/com/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/SetUp.java" />
         <option value="$PROJECT_DIR$/src/com/Ship.java" />
+        <option value="$PROJECT_DIR$/src/com/tests/SettingTest.java" />
+        <option value="$PROJECT_DIR$/src/com/SetUp.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1060" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -149,6 +154,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SeaBattle" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -156,9 +165,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548100397012" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548279397017" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../selenium" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
@@ -173,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SettingTest.testSetting">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.Main" />
       <module name="SeaBattle" />
@@ -184,8 +198,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SettingTest.testSetting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.SettingTest" />
+      <option name="METHOD_NAME" value="testSetting" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SettingTest.testSetting" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -202,17 +233,39 @@
       <updated>1547917156086</updated>
       <workItem from="1547917161359" duration="15325000" />
       <workItem from="1548003025435" duration="1971000" />
-      <workItem from="1548070515760" duration="16954000" />
+      <workItem from="1548070515760" duration="17190000" />
+      <workItem from="1548251686548" duration="6017000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 47m 47s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 51m 46s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 52m 37s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 54m 07s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 58m 52s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 59m 40s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34250000" />
+    <option name="totallyTimeSpent" value="40503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -221,7 +274,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -229,7 +282,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -282,7 +335,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/SetUp.java</url>
-          <line>25</line>
+          <line>28</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -290,13 +343,7 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/SetUpException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SetUpException.java" />
     <entry file="file://$PROJECT_DIR$/src/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -304,48 +351,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Status.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="215" column="22" selection-start-line="215" selection-start-column="22" selection-end-line="215" selection-end-column="22" />
-          <folding>
-            <element signature="method#checkIfWhithinSeaBoundary#0;class#SetUp#0" />
-            <element signature="method#checkIfExactPositionIsViable#0;class#SetUp#0" />
-            <element signature="method#checkIfWhithinSeaBoundary#1;class#SetUp#0" />
-            <element signature="method#checkBehind#0;class#SetUp#0" />
-            <element signature="method#checkBehind#1;class#SetUp#0" />
-            <element signature="method#checkArouund#0;class#SetUp#0" />
-            <element signature="method#checkPosition#0;class#SetUp#0" />
-            <element signature="method#initialSetUp#0;class#SetUp#0" />
-            <element signature="method#secondarySetUp#0;class#SetUp#0" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-          <folding>
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="328">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Status.java">
+    <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="175">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#176#177#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="107">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#296#297#0" expanded="true" />
@@ -355,19 +390,24 @@
             <element signature="e#465#466#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
             <element signature="e#550#551#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#847#848#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#949#950#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="242" lean-forward="true" selection-start-line="242" selection-end-line="242" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkIfWithinSeaBoundary#0;class#SetUp#0" />
+            <element signature="method#checkIfExactPositionIsViable#0;class#SetUp#0" />
+            <element signature="method#checkAdjacentPlaces#0;class#SetUp#0" />
+            <element signature="method#checkBehind#0;class#SetUp#0" />
+            <element signature="method#checkBefore#0;class#SetUp#0" />
+            <element signature="method#checkAround#0;class#SetUp#0" />
+            <element signature="method#checkPosition#0;class#SetUp#0" />
           </folding>
         </state>
       </provider>
