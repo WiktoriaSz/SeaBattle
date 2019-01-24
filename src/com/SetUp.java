@@ -189,12 +189,41 @@ public class SetUp {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj pozycję statku (x, y) - od 0 do " + (sea.length - 1) + " dla " + size + "-masztowca.");
         int x = sc.nextInt();
+        if (x > sea.length || x < 0){
+            throw new IllegalArgumentException();
+        }
         int y = sc.nextInt();
+        if (y > sea.length || y < 0){
+            throw new IllegalArgumentException();
+        }
         System.out.println("Podaj położenie statku:" + "\n" + "1 - poprzeczna (x)," + "\n" + "2 - pionowa (y).");
         int position = sc.nextInt();
+        if (position > 2 || position < 1){
+            throw new IllegalArgumentException();
+        }
         return new Ship(x, y, size, position);
 
     } // for a player - will go into last method's argument
+
+    public static Ship checkAndSetforPlayer(Player player, int size) {
+        int x = -1;
+        int y = -1;
+        int position = -1;
+
+        while (!SetUp.checkPosition(x, y, player.getSea(), size, position)) {
+            Ship ship = playerInputForSetUp(size, player.getSea());
+            x = ship.getStartingPositionX();
+            y = ship.getStartingPositionY();
+            size = ship.getSize();
+            position = ship.getPosition();
+        }
+
+        Ship approvedShip = new Ship(x, y, size, position);
+        player.setShip(approvedShip);
+
+        return approvedShip;
+    }
+
 
     private static Ship shipGenerator(int size, String[][] sea) {
         Random random = new Random(sea.length);
@@ -210,22 +239,26 @@ public class SetUp {
         return new Ship(x, y, size, position);
     } // for virtual player - will go into last method's argument
 
-    public static Ship checkAndSet(String[][] sea, Ship ship) {
+    public static Ship checkAndSet(Player player, Ship ship) {
         int x = -1;
         int y = -1;
         int size = -1;
         int position = -1;
-        while (!SetUp.checkPosition(x, y, sea, size, position)) {
+
+        while (!SetUp.checkPosition(x, y, player.getSea(), size, position)) {
             x = ship.getStartingPositionX();
             y = ship.getStartingPositionY();
             size = ship.getSize();
             position = ship.getPosition();
         }
-        return new Ship(x, y, size, position);
+
+        Ship approvedShip = new Ship(x, y, size, position);
+        player.setShip(approvedShip);
+
+        return approvedShip;
     }
 
-    public static void shipPlacement(Ship ship, Player player) {
-        player.setShip(ship);
+    public static void shipPlacement(Player player, Ship ship) {
         int x = ship.getStartingPositionX();
         int y = ship.getStartingPositionY();
         switch (ship.getPosition()) {
@@ -246,18 +279,16 @@ public class SetUp {
     }
 
     public static void playerSeaSetUp(Player player) {
-        for (int i = 0; i < shipTypes.size(); i++) {
-            shipPlacement(
-                    checkAndSet(player.getSea(), playerInputForSetUp(shipTypes.get(i), player.getSea())),
-                    player);
+        for (Integer shipType : shipTypes) {
+            shipPlacement(player,
+                    checkAndSet(player, playerInputForSetUp(shipType, player.getSea())));
         }
     }
 
     public static void virtualPlayerSeaSetUp(Player player) {
-        for (int i = 0; i < shipTypes.size(); i++) {
-            shipPlacement(
-                    checkAndSet(player.getSea(), shipGenerator(shipTypes.get(i), player.getSea())),
-                    player);
+        for (Integer shipType : shipTypes) {
+            shipPlacement(player,
+                    checkAndSet(player, shipGenerator(shipType, player.getSea())));
         }
 
     }

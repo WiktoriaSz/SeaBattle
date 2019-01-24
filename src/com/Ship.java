@@ -47,6 +47,17 @@ public class Ship {
         this.size = size;
     }
 
+    @Override
+    public String toString() {
+        return "Ship{" +
+                "X = " + startingPositionX +
+                ", Y = " + startingPositionY +
+                ", size = " + size +
+                ", position = " + position +
+                ", status = " + status +
+                '}';
+    }
+
     public Status getStatus() {
         return status;
     }

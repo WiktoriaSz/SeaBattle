@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/SetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/SetUp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Ship.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Ship.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/tests/SettingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/tests/SettingTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Ship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tests/SettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tests/SettingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="153">
+              <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -27,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="252" column="9" lean-forward="true" selection-start-line="252" selection-start-column="9" selection-end-line="252" selection-end-column="9" />
+            <state relative-caret-position="153">
+              <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
               <folding>
                 <element signature="method#checkIfWithinSeaBoundary#0;class#SetUp#0" />
                 <element signature="method#checkIfExactPositionIsViable#0;class#SetUp#0" />
@@ -40,9 +47,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="107">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -62,8 +78,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="17">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="222">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -110,6 +126,7 @@
         <option value="$PROJECT_DIR$/src/com/Player.java" />
         <option value="$PROJECT_DIR$/src/com/Ship.java" />
         <option value="$PROJECT_DIR$/src/com/tests/SettingTest.java" />
+        <option value="$PROJECT_DIR$/src/com/Game.java" />
         <option value="$PROJECT_DIR$/src/com/SetUp.java" />
         <option value="$PROJECT_DIR$/src/com/Main.java" />
       </list>
@@ -164,7 +181,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548280895800" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548348220287" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../selenium" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
@@ -180,7 +197,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SettingTest.testSetting">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.Main" />
       <module name="SeaBattle" />
@@ -191,7 +208,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SettingTest.testSetting" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SettingTest.initialSettingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeaBattle" />
       <extension name="coverage">
         <pattern>
@@ -201,7 +218,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tests" />
       <option name="MAIN_CLASS_NAME" value="com.tests.SettingTest" />
-      <option name="METHOD_NAME" value="testSetting" />
+      <option name="METHOD_NAME" value="initialSettingTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SettingTest.virtualSeaSettingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.SettingTest" />
+      <option name="METHOD_NAME" value="virtualSeaSettingTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -209,8 +242,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SettingTest.testSetting" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SettingTest.virtualSeaSettingTest" />
+        <item itemvalue="JUnit.SettingTest.initialSettingTest" />
       </list>
     </recent_temporary>
   </component>
@@ -228,14 +262,11 @@
       <workItem from="1548003025435" duration="1971000" />
       <workItem from="1548070515760" duration="17190000" />
       <workItem from="1548251686548" duration="6302000" />
-      <workItem from="1548328630009" duration="2736000" />
+      <workItem from="1548328630009" duration="10033000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 47m 47s.xml">
-      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 51m 46s.xml">
       <configuration name="SettingTest.testSetting" configurationId="JUnit" />
     </history-entry>
@@ -251,15 +282,30 @@
     <history-entry file="SettingTest_testSetting - 2019.01.23 at 21h 59m 40s.xml">
       <configuration name="SettingTest.testSetting" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SettingTest_testSetting - 2019.01.24 at 15h 55m 53s.xml">
+      <configuration name="SettingTest.testSetting" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_seaSettingTest - 2019.01.24 at 16h 05m 07s.xml">
+      <configuration name="SettingTest.seaSettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_initialSettingTest - 2019.01.24 at 16h 27m 36s.xml">
+      <configuration name="SettingTest.initialSettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_initialSettingTest - 2019.01.24 at 16h 29m 06s.xml">
+      <configuration name="SettingTest.initialSettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_virtualSeaSettingTest - 2019.01.24 at 16h 57m 36s.xml">
+      <configuration name="SettingTest.virtualSeaSettingTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43524000" />
+    <option name="totallyTimeSpent" value="50821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -268,7 +314,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -276,7 +322,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -290,7 +336,7 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -299,7 +345,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -307,7 +353,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -338,9 +384,23 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/SetUpException.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="107">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -358,32 +418,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="17">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Status.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="252" column="9" lean-forward="true" selection-start-line="252" selection-start-column="9" selection-end-line="252" selection-end-column="9" />
+        <state relative-caret-position="153">
+          <caret line="194" column="29" lean-forward="true" selection-start-line="194" selection-start-column="29" selection-end-line="194" selection-end-column="29" />
           <folding>
             <element signature="method#checkIfWithinSeaBoundary#0;class#SetUp#0" />
             <element signature="method#checkIfExactPositionIsViable#0;class#SetUp#0" />
@@ -395,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
         </state>
       </provider>
     </entry>

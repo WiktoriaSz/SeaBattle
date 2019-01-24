@@ -7,7 +7,7 @@ public class Player {
     private List<Ship> playerArmada = new ArrayList<>();
     private List<Ship> successfulHits = new ArrayList<>();
     private int points;
-    private String[][] sea = new String[9][9];
+    private String[][] sea = new String[10][10];
 
     public Player() {
         this.points = 0;
