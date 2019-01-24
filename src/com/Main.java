@@ -6,7 +6,8 @@ public class Main {
         Player player = new Player();
         Player computer = new Player();
 
-        String[][] sea = new String[9][9];
+        SetUp.virtualPlayerSeaSetUp(computer);
+        SetUp.playerSeaSetUp(player);
 
 
     }
