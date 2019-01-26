@@ -11,9 +11,10 @@ public class SettingTest {
 
     @Test
     public void initialSettingTest() {
-        Player p1 = new Player();
+        Player p1 = new Player(true);
 
         Ship ship = new Ship(3, 3, 4, 1);
+        p1.setShip(ship);
         SetUp.shipPlacement(p1, ship);
 
         // are too close and parallel
@@ -32,10 +33,17 @@ public class SettingTest {
     }
 
     @Test
-    public void virtualSeaSettingTest() {
-        Player p2 = new Player();
+    public void checkAndSetTest(){
+        Player p2 = new Player(false);
+        SetUp.checkAndSet(p2, 4);
 
-        SetUp.virtualPlayerSeaSetUp(p2);
+    }
+
+    @Test
+    public void seaSettingTest() {
+        Player p2 = new Player(false);
+
+        SetUp.seaSetUp(p2);
 
         for (Ship ship : p2.getPlayerArmada()) {
             assertTrue(SetUp.checkPosition(

@@ -16,13 +16,18 @@ public class SetUp {
             case 1:
                 if (x + (size - 1) > (sea.length - 1)) {
                     return false;
+                } else {
+                    return true;
                 }
             case 2:
                 if (y + (size - 1) > (sea.length - 1)) {
                     return false;
                 }
+                else {
+                    return true;
+                }
         }
-        return true;
+        return false;
     }
 
     private static boolean checkIfExactPositionIsViable(int x, int y, String[][] sea, int size, int position) {
@@ -175,9 +180,7 @@ public class SetUp {
     public static boolean checkPosition(int x, int y, String[][] sea, int size, int position) {
         if (checkIfWithinSeaBoundary(x, y, sea, size, position)) {
             if (checkIfExactPositionIsViable(x, y, sea, size, position)) {
-                if (checkAroundPlacementOfShip(x, y, sea, size, position)) {
-                    return true;
-                }
+                return checkAroundPlacementOfShip(x, y, sea, size, position);
             }
         }
         return false;
@@ -189,46 +192,17 @@ public class SetUp {
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj pozycję statku (x, y) - od 0 do " + (sea.length - 1) + " dla " + size + "-masztowca.");
         int x = sc.nextInt();
-        if (x > sea.length || x < 0){
-            throw new IllegalArgumentException();
-        }
         int y = sc.nextInt();
-        if (y > sea.length || y < 0){
-            throw new IllegalArgumentException();
-        }
         System.out.println("Podaj położenie statku:" + "\n" + "1 - poprzeczna (x)," + "\n" + "2 - pionowa (y).");
         int position = sc.nextInt();
-        if (position > 2 || position < 1){
-            throw new IllegalArgumentException();
-        }
         return new Ship(x, y, size, position);
 
     } // for a player - will go into last method's argument
 
-    public static Ship checkAndSetforPlayer(Player player, int size) {
-        int x = -1;
-        int y = -1;
-        int position = -1;
-
-        while (!SetUp.checkPosition(x, y, player.getSea(), size, position)) {
-            Ship ship = playerInputForSetUp(size, player.getSea());
-            x = ship.getStartingPositionX();
-            y = ship.getStartingPositionY();
-            size = ship.getSize();
-            position = ship.getPosition();
-        }
-
-        Ship approvedShip = new Ship(x, y, size, position);
-        player.setShip(approvedShip);
-
-        return approvedShip;
-    }
-
-
     private static Ship shipGenerator(int size, String[][] sea) {
-        Random random = new Random(sea.length);
-        int x = random.nextInt();
-        int y = random.nextInt();
+        Random random = new Random();
+        int x = random.nextInt(sea.length);
+        int y = random.nextInt(sea.length);
         Random r = new Random();
         int position;
         if (r.nextBoolean()) {
@@ -239,17 +213,36 @@ public class SetUp {
         return new Ship(x, y, size, position);
     } // for virtual player - will go into last method's argument
 
-    public static Ship checkAndSet(Player player, Ship ship) {
+    public static Ship choseInput(boolean whichPlayer, int size, String [][] sea){
+        Ship ship;
+        if (whichPlayer){
+        return playerInputForSetUp(size, sea);
+        } else {
+        return shipGenerator(size, sea);
+        }
+    }
+
+    public static Ship checkAndSet(Player player, int size) {
         int x = -1;
         int y = -1;
-        int size = -1;
         int position = -1;
 
         while (!SetUp.checkPosition(x, y, player.getSea(), size, position)) {
+            Ship ship = choseInput(player.isWhichPlayer(), size, player.getSea());
             x = ship.getStartingPositionX();
+            if (x < 0 || x >= player.getSea().length){
+                System.out.println("Niepoprawne dane. Spróbuj ponownie.");
+                continue;
+            }
             y = ship.getStartingPositionY();
-            size = ship.getSize();
+            if (y < 0 || y >= player.getSea().length){
+                System.out.println("Niepoprawne dane. Spróbuj ponownie.");
+                continue;
+            }
             position = ship.getPosition();
+            if (position < 1 || position > 2){
+                System.out.println("Niepoprawne dane. Spróbuj ponownie.");
+            }
         }
 
         Ship approvedShip = new Ship(x, y, size, position);
@@ -278,18 +271,11 @@ public class SetUp {
         }
     }
 
-    public static void playerSeaSetUp(Player player) {
+    public static void seaSetUp(Player player) {
         for (Integer shipType : shipTypes) {
             shipPlacement(player,
-                    checkAndSet(player, playerInputForSetUp(shipType, player.getSea())));
+                    checkAndSet(player, shipType));
         }
     }
 
-    public static void virtualPlayerSeaSetUp(Player player) {
-        for (Integer shipType : shipTypes) {
-            shipPlacement(player,
-                    checkAndSet(player, shipGenerator(shipType, player.getSea())));
-        }
-
-    }
 }

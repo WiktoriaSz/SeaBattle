@@ -8,8 +8,10 @@ public class Player {
     private List<Ship> successfulHits = new ArrayList<>();
     private int points;
     private String[][] sea = new String[10][10];
+    private boolean whichPlayer;
 
-    public Player() {
+    public Player(boolean whichPlayer) {
+        this.whichPlayer = whichPlayer;
         this.points = 0;
     }
 
@@ -23,6 +25,14 @@ public class Player {
 
     public void setShip(Ship ship){
         getPlayerArmada().add(ship);
+    }
+
+    public boolean isWhichPlayer() {
+        return whichPlayer;
+    }
+
+    public void setWhichPlayer(boolean whichPlayer) {
+        this.whichPlayer = whichPlayer;
     }
 
     public List<Ship> getSuccessfulHits() {
