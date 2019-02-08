@@ -5,14 +5,15 @@ import java.util.List;
 
 public class Player {
     private List<Ship> playerArmada = new ArrayList<>();
-    private List<Ship> successfulHits = new ArrayList<>();
+//    private List<Ship> successfulHits = new ArrayList<>();
     private int points;
-    private String[][] sea = new String[10][10];
+    private String[][] sea;
     private boolean whichPlayer;
 
     public Player(boolean whichPlayer) {
         this.whichPlayer = whichPlayer;
         this.points = 0;
+        this.sea = new String[10][10];
     }
 
     public List<Ship> getPlayerArmada() {
@@ -35,13 +36,13 @@ public class Player {
         this.whichPlayer = whichPlayer;
     }
 
-    public List<Ship> getSuccessfulHits() {
-        return successfulHits;
-    }
-
-    public void setSuccessfulHits(List<Ship> successfulHits) {
-        this.successfulHits = successfulHits;
-    }
+//    public List<Ship> getSuccessfulHits() {
+//        return successfulHits;
+//    }
+//
+//    public void setSuccessfulHits(List<Ship> successfulHits) {
+//        this.successfulHits = successfulHits;
+//    }
 
     public int getPoints() {
         return points;
