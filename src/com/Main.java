@@ -9,7 +9,5 @@ public class Main {
         player.setSea(setUp.seaSetUp(player));
         computer.setSea(setUp.seaSetUp(computer));
 
-
-
     }
 }
