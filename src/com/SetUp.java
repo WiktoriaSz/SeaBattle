@@ -57,17 +57,23 @@ public class SetUp {
         }
     }
 
-    public Ship checkAndSet(Player player, int size) {
-        int x, y, position = -1;
-        boolean badPlacement = true;
+    public Ship checkAndSet(Player player, int size, String[][] sea) {
+        int x, y, position;
+        boolean badPlacement = false;
         boolean isRealPlayer = player.isWhichPlayer();
-        String[][] sea = player.getSea();
 
-        while (badPlacement) {
+        do {
             Ship ship = choseInput(isRealPlayer, size, sea);
             x = ship.getStartingPositionX();
             y = ship.getStartingPositionY();
             position = ship.getPosition();
+            if (check.checkPosition(x, y, sea, size, position)) {
+                if (position == 1) {
+                    badPlacement = check.checkAroundPlacementOfHorizontalShip(x, y, sea, size);
+                } else if (position == 2) {
+                    badPlacement = check.checkAroundPlacementOfVerticalShip(x, y, sea, size);
+                }
+            }
 // ------------------- for user player only
 //            if (x < 0 || x >= player.getSea().length) {
 //                System.out.println("Niepoprawne dane. Spróbuj ponownie.");
@@ -82,20 +88,18 @@ public class SetUp {
 //        }
 //        //----------------------
 //    }
-            badPlacement = !(check.checkPosition(x, y, sea, size, position));
-        }
-        Ship approvedShip = new Ship(x, y, size, position); // todo: dane z while?
+        } while (!badPlacement);
 
-        return approvedShip;
+        return new Ship(x, y, size, position);
     }
 
-    public void shipPlacement(Player player, Ship ship) {
+    public void shipPlacement(Player player, Ship ship, String[][] sea) {
         int x = ship.getStartingPositionX();
         int y = ship.getStartingPositionY();
-
+        int position = ship.getPosition();
         for (int i = 0; i < ship.getSize(); i++) {
-            player.getSea()[y][x] = "o";
-            if ((ship.getPosition() == 1)) {
+            sea[y][x] = "o";
+            if (position == 1) {
                 ++x;
             } else {
                 ++y;
@@ -104,11 +108,14 @@ public class SetUp {
         player.setShip(ship);
     }
 
-    public void seaSetUp(Player player) {
+    public String[][] seaSetUp(Player player) {
+        String[][] sea = player.getSea();
         for (Integer shipType : shipSizes) {
             shipPlacement(player,
-                    checkAndSet(player, shipType));
+                    checkAndSet(player, shipType, sea), sea);
+            sea = player.getSea();
         }
+        return sea;
     }
 
 }

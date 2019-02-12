@@ -16,7 +16,7 @@ public class CheckTest {
 
     static {
         p1.setShip(ship);
-        setUp.shipPlacement(p1, ship);
+        setUp.shipPlacement(p1, ship, p1.getSea());
     }
 
     @Test

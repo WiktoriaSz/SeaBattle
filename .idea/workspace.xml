@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Check.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/SetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/SetUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/tests/SettingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/tests/SettingTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SetUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tests/CheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tests/CheckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tests/SettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tests/SettingTest.java" afterDir="false" />
@@ -21,35 +18,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#883#928#0" />
-                <element signature="e#1288#1289#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="94">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="e#504#505#0" expanded="true" />
                 <element signature="e#535#536#0" expanded="true" />
                 <element signature="e#580#581#0" expanded="true" />
                 <element signature="e#620#621#0" expanded="true" />
@@ -57,6 +30,7 @@
                 <element signature="e#701#702#0" expanded="true" />
                 <element signature="e#764#765#0" expanded="true" />
                 <element signature="e#822#823#0" expanded="true" />
+                <element signature="e#863#864#0" expanded="true" />
                 <element signature="e#903#904#0" expanded="true" />
                 <element signature="e#966#967#0" expanded="true" />
                 <element signature="e#1024#1025#0" expanded="true" />
@@ -73,23 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-              <folding>
-                <element signature="e#2329#2372#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Check.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="225" column="1" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
+            <state relative-caret-position="94">
+              <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
                 <element signature="e#2675#2778#0" />
               </folding>
@@ -97,23 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/tests/CheckTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            <state relative-caret-position="141">
+              <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,11 +93,11 @@
         <option value="$PROJECT_DIR$/src/com/Game.java" />
         <option value="$PROJECT_DIR$/src/com/Ship.java" />
         <option value="$PROJECT_DIR$/src/com/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/tests/SettingTest.java" />
-        <option value="$PROJECT_DIR$/src/com/Check.java" />
         <option value="$PROJECT_DIR$/src/com/tests/CheckTest.java" />
         <option value="$PROJECT_DIR$/src/com/SetUp.java" />
+        <option value="$PROJECT_DIR$/src/com/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/Check.java" />
+        <option value="$PROJECT_DIR$/src/com/tests/SettingTest.java" />
       </list>
     </option>
   </component>
@@ -207,7 +157,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549906293848" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549974881679" />
     <property name="last_opened_file_path" value="H:/Git/bin/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -238,21 +188,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeaBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.CheckTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SettingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeaBattle" />
       <extension name="coverage">
@@ -264,6 +199,22 @@
       <option name="PACKAGE_NAME" value="com.tests" />
       <option name="MAIN_CLASS_NAME" value="com.tests.SettingTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SettingTest.seaArraySettingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.tests.SettingTest" />
+      <option name="METHOD_NAME" value="seaArraySettingTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -303,10 +254,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SettingTest.seaSettingTest2" />
-        <item itemvalue="JUnit.SettingTest.seaSettingTest" />
         <item itemvalue="JUnit.SettingTest" />
+        <item itemvalue="JUnit.SettingTest.seaArraySettingTest" />
+        <item itemvalue="JUnit.SettingTest.seaSettingTest" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.CheckTest" />
       </list>
     </recent_temporary>
   </component>
@@ -333,44 +284,44 @@
       <workItem from="1549636776580" duration="25112000" />
       <workItem from="1549825919161" duration="125000" />
       <workItem from="1549897344297" duration="7684000" />
-      <workItem from="1549964757664" duration="2428000" />
+      <workItem from="1549964757664" duration="8685000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 15m 29s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 13h 25m 02s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 18m 59s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 13h 25m 05s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 24m 41s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 13h 25m 07s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 24m 59s.xml">
+    <history-entry file="SettingTest - 2019.02.12 at 13h 25m 38s.xml">
+      <configuration name="SettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest - 2019.02.12 at 13h 26m 20s.xml">
+      <configuration name="SettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest - 2019.02.12 at 13h 26m 32s.xml">
+      <configuration name="SettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest - 2019.02.12 at 13h 31m 34s.xml">
+      <configuration name="SettingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 13h 33m 23s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 33m 19s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 13h 34m 05s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 18h 05m 32s.xml">
-      <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 18h 20m 09s.xml">
-      <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 18h 23m 24s.xml">
-      <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 10h 54m 41s.xml">
-      <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 11h 19m 45s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 13h 34m 43s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103889000" />
+    <option name="totallyTimeSpent" value="110146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -454,15 +405,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/SetUp.java</url>
-          <line>65</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/com/tests/SettingTest.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="13" />
+          <line>34</line>
+          <properties class="com.tests.SettingTest" method="seaSettingTest2">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -494,78 +447,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="240" selection-start-line="240" selection-end-line="240" />
-          <folding>
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2155#2156#0" expanded="true" />
-            <element signature="e#5951#6086#0" expanded="true" />
-            <element signature="e#6085#6086#0" expanded="true" />
-            <element signature="e#6484#6648#0" expanded="true" />
-            <element signature="e#6647#6648#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state>
+          <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tests/CheckTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#2329#2372#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="94">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
             <element signature="e#883#928#0" />
+            <element signature="e#1262#1263#0" expanded="true" />
             <element signature="e#1288#1289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#594#595#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="94">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#504#505#0" expanded="true" />
             <element signature="e#535#536#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#620#621#0" expanded="true" />
@@ -573,6 +510,7 @@
             <element signature="e#701#702#0" expanded="true" />
             <element signature="e#764#765#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
             <element signature="e#903#904#0" expanded="true" />
             <element signature="e#966#967#0" expanded="true" />
             <element signature="e#1024#1025#0" expanded="true" />
@@ -588,42 +526,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="60" selection-start-line="60" selection-end-line="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tests/CheckTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Check.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="225" column="1" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
+        <state relative-caret-position="94">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
             <element signature="e#2675#2778#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
           <folding>
-            <element signature="e#2329#2372#0" />
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#5951#6086#0" expanded="true" />
+            <element signature="e#6085#6086#0" expanded="true" />
+            <element signature="e#6484#6648#0" expanded="true" />
+            <element signature="e#6647#6648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="35" column="75" selection-start-line="35" selection-start-column="75" selection-end-line="35" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

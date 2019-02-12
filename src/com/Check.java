@@ -53,8 +53,8 @@ public class Check {
                 return false;
             }
         }
-        if ((x + 1) <= (sea.length - 1)) {
-            if ((sea[y][x + 1]) != null) {
+        if ((x + size) <= (sea.length - 1)) {
+            if ((sea[y][x + size]) != null) {
                 return false;
             }
         }
@@ -81,8 +81,8 @@ public class Check {
                 return false;
             }
         }
-        if ((y + 1) <= (sea.length - 1)) {
-            if ((sea[y + 1][x]) != null) {
+        if ((y + size) <= (sea.length - 1)) {
+            if ((sea[y + size][x]) != null) {
                 return false;
             }
         }
@@ -214,12 +214,13 @@ public class Check {
     public boolean checkPosition(int x, int y, String[][] sea, int size, int position) {
         if (checkIfWithinSeaBoundary(x, y, sea, size, position)) {
             if (checkIfExactPositionIsViable(x, y, sea, size, position)) {
-                switch (position) {
-                    case 1:
-                        return checkAroundPlacementOfHorizontalShip(x, y, sea, size);
-                    case 2:
-                        return checkAroundPlacementOfVerticalShip(x, y, sea, size);
-                }
+                return true;
+//                switch (position) {
+//                    case 1:
+//                        return checkAroundPlacementOfHorizontalShip(x, y, sea, size);
+//                    case 2:
+//                        return checkAroundPlacementOfVerticalShip(x, y, sea, size);
+//                }
             }
         }
         return false;
