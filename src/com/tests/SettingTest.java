@@ -21,7 +21,8 @@ public class SettingTest {
     @Test
     public void seaArraySettingTest() {
 
-        System.out.println(Arrays.deepToString(sea).replace("], ", "]\n").replace("o, ", "o   , "));
+        System.out.println(Arrays.deepToString(sea)
+                .replace("], ", "]\n").replace("o, ", "o   , "));
         int x = p2.getPlayerArmada().get(1).getStartingPositionX();
         int y = p2.getPlayerArmada().get(1).getStartingPositionY();
         System.out.println("x = " + x + "  y = " + y);

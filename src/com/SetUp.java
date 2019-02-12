@@ -13,7 +13,8 @@ public class SetUp {
 
     private static Ship playerInputForSetUp(int size, String[][] sea) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Podaj pozycję statku (x, y) - od 0 do " + (sea.length - 1) + " dla " + size + "-masztowca.");
+        System.out.println("Podaj pozycję statku (x, y) - od 0 do " + (sea.length - 1)
+                + " dla " + size + "-masztowca.");
         int x = sc.nextInt();
         int y = sc.nextInt();
 
@@ -24,7 +25,8 @@ public class SetUp {
             y = sc.nextInt();
         }
 
-        System.out.println("Podaj położenie statku:" + "\n" + "1 - horyzontalna (x)," + "\n" + "2 - pionowa (y).");
+        System.out.println("Podaj położenie statku:" + "\n"
+                + "1 - horyzontalna (x)," + "\n" + "2 - pionowa (y).");
         int position = sc.nextInt();
 
         while (position > 2 || position < 1) {
@@ -47,7 +49,7 @@ public class SetUp {
             position = 2;
         }
         return new Ship(x, y, size, position);
-    } // for virtual player
+    } // for virtual player - aka computer
 
     public static Ship choseInput(boolean whichPlayer, int size, String[][] sea) {
         if (whichPlayer) {
@@ -74,20 +76,6 @@ public class SetUp {
                     badPlacement = check.checkAroundPlacementOfVerticalShip(x, y, sea, size);
                 }
             }
-// ------------------- for user player only
-//            if (x < 0 || x >= player.getSea().length) {
-//                System.out.println("Niepoprawne dane. Spróbuj ponownie.");
-//                continue;
-//            }
-//            if (y < 0 || y >= player.getSea().length) {
-//                System.out.println("Niepoprawne dane. Spróbuj ponownie.");
-//                continue;
-//        }
-//        if (position < 1 || position > 2) {
-//            System.out.println("Niepoprawne dane. Spróbuj ponownie.");
-//        }
-//        //----------------------
-//    }
         } while (!badPlacement);
 
         return new Ship(x, y, size, position);

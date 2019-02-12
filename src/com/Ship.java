@@ -19,32 +19,16 @@ public class Ship {
         return position;
     }
 
-    public void setPosition(int position) {
-        this.position = position;
-    }
-
     public int getStartingPositionX() {
         return startingPositionX;
-    }
-
-    public void setStartingPositionX(int startingPositionX) {
-        this.startingPositionX = startingPositionX;
     }
 
     public int getStartingPositionY() {
         return startingPositionY;
     }
 
-    public void setStartingPositionY(int startingPositionY) {
-        this.startingPositionY = startingPositionY;
-    }
-
     public int getSize() {
         return size;
-    }
-
-    public void setSize(int size) {
-        this.size = size;
     }
 
     @Override
