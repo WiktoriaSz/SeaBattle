@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Check.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/tests/CheckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Check.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/SetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/SetUp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/tests/SettingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/tests/SettingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Check.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/tests/CheckTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tests/CheckTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/tests/SettingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/tests/SettingTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,22 +32,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
+            <state relative-caret-position="595">
               <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#499#500#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#725#726#0" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
                 <element signature="e#883#928#0" />
-                <element signature="e#1254#1255#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
+                <element signature="e#1288#1289#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
+            <state relative-caret-position="442">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="e#504#505#0" expanded="true" />
@@ -86,13 +73,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="85">
+              <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
-                <element signature="e#2817#2860#0" />
+                <element signature="e#2329#2372#0" />
               </folding>
             </state>
           </provider>
@@ -101,20 +88,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Check.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="212" selection-start-line="212" selection-end-line="212" />
+            <state relative-caret-position="334">
+              <caret line="225" column="1" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
               <folding>
-                <element signature="e#2427#2530#0" />
+                <element signature="e#2675#2778#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/tests/CheckTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="51" column="134" selection-start-line="51" selection-start-column="134" selection-end-line="51" selection-end-column="134" />
+            <state relative-caret-position="443">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,11 +143,11 @@
         <option value="$PROJECT_DIR$/src/com/Game.java" />
         <option value="$PROJECT_DIR$/src/com/Ship.java" />
         <option value="$PROJECT_DIR$/src/com/Player.java" />
-        <option value="$PROJECT_DIR$/src/com/tests/CheckTest.java" />
         <option value="$PROJECT_DIR$/src/com/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/Check.java" />
-        <option value="$PROJECT_DIR$/src/com/SetUp.java" />
         <option value="$PROJECT_DIR$/src/com/tests/SettingTest.java" />
+        <option value="$PROJECT_DIR$/src/com/Check.java" />
+        <option value="$PROJECT_DIR$/src/com/tests/CheckTest.java" />
+        <option value="$PROJECT_DIR$/src/com/SetUp.java" />
       </list>
     </option>
   </component>
@@ -168,6 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,16 +193,11 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SeaBattle" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,7 +207,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549662769896" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549906293848" />
     <property name="last_opened_file_path" value="H:/Git/bin/git.exe" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -335,61 +330,63 @@
       <workItem from="1548963208381" duration="1470000" />
       <workItem from="1549219440007" duration="8451000" />
       <workItem from="1549446975775" duration="1366000" />
-      <workItem from="1549636776580" duration="24854000" />
+      <workItem from="1549636776580" duration="25112000" />
+      <workItem from="1549825919161" duration="125000" />
+      <workItem from="1549897344297" duration="7684000" />
+      <workItem from="1549964757664" duration="2428000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SettingTest_seaSettingTest - 2019.02.08 at 22h 11m 55s.xml">
-      <configuration name="SettingTest.seaSettingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 17m 19s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 15m 29s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 29m 10s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 18m 59s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 36m 47s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 24m 41s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 36m 50s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 24m 59s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 41m 17s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 17h 33m 19s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 45m 37s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 18h 05m 32s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 48m 32s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 18h 20m 09s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 51m 27s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.11 at 18h 23m 24s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.08 at 22h 52m 53s.xml">
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 10h 54m 41s.xml">
+      <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SettingTest_seaSettingTest2 - 2019.02.12 at 11h 19m 45s.xml">
       <configuration name="SettingTest.seaSettingTest2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93394000" />
+    <option name="totallyTimeSpent" value="103889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27987897" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28441754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34042552" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31914893" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45826513" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -399,6 +396,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3289689" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,9 +454,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/SetUp.java</url>
-          <line>64</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/tests/SettingTest.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -487,20 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tests/CheckTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -533,31 +523,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
+        <state relative-caret-position="595">
           <caret line="55" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
             <element signature="e#883#928#0" />
-            <element signature="e#1254#1255#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1288#1289#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Ship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
+        <state relative-caret-position="442">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#504#505#0" expanded="true" />
@@ -583,50 +588,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+    <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="443">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+    <entry file="file://$PROJECT_DIR$/src/com/tests/CheckTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="251">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
-            <element signature="e#594#595#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/Check.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="212" selection-start-line="212" selection-end-line="212" />
+        <state relative-caret-position="334">
+          <caret line="225" column="1" selection-start-line="225" selection-start-column="1" selection-end-line="225" selection-end-column="1" />
           <folding>
-            <element signature="e#2427#2530#0" />
+            <element signature="e#2675#2778#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="85">
+          <caret line="60" column="32" lean-forward="true" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding>
-            <element signature="e#2817#2860#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/tests/SettingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="51" column="134" selection-start-line="51" selection-start-column="134" selection-end-line="51" selection-end-column="134" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2329#2372#0" />
           </folding>
         </state>
       </provider>

@@ -11,11 +11,12 @@ public class CheckTest {
 
     private Check check = new Check();
     private static Player p1 = new Player(true);
+    private static SetUp setUp = new SetUp();
     private static Ship ship = new Ship(2, 3, 4, 1);
 
     static {
         p1.setShip(ship);
-        SetUp.shipPlacement(p1, ship);
+        setUp.shipPlacement(p1, ship);
     }
 
     @Test

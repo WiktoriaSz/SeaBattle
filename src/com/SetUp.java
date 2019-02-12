@@ -47,7 +47,7 @@ public class SetUp {
             position = 2;
         }
         return new Ship(x, y, size, position);
-    } // for virtual player - will go into last method's argument
+    } // for virtual player
 
     public static Ship choseInput(boolean whichPlayer, int size, String[][] sea) {
         if (whichPlayer) {
@@ -58,12 +58,13 @@ public class SetUp {
     }
 
     public Ship checkAndSet(Player player, int size) {
-        int x = -1;
-        int y = -1;
-        int position = -1;
+        int x, y, position = -1;
         boolean badPlacement = true;
+        boolean isRealPlayer = player.isWhichPlayer();
+        String[][] sea = player.getSea();
+
         while (badPlacement) {
-            Ship ship = choseInput(player.isWhichPlayer(), size, player.getSea());
+            Ship ship = choseInput(isRealPlayer, size, sea);
             x = ship.getStartingPositionX();
             y = ship.getStartingPositionY();
             position = ship.getPosition();
@@ -81,32 +82,26 @@ public class SetUp {
 //        }
 //        //----------------------
 //    }
-            badPlacement = !(this.check.checkPosition(x, y, player.getSea(), size, position));
+            badPlacement = !(check.checkPosition(x, y, sea, size, position));
         }
         Ship approvedShip = new Ship(x, y, size, position); // todo: dane z while?
-        player.setShip(approvedShip);
 
         return approvedShip;
     }
 
-    public static void shipPlacement(Player player, Ship ship) {
+    public void shipPlacement(Player player, Ship ship) {
         int x = ship.getStartingPositionX();
         int y = ship.getStartingPositionY();
-        switch (ship.getPosition()) {
-            case 1:
-                for (int i = 0; i < ship.getSize(); i++) {
-                    player.getSea()[y][x] = "o";
-                    ++x;
-                }
-                break;
 
-            case 2:
-                for (int i = 0; i < ship.getSize(); i++) {
-                    player.getSea()[y][x] = "o";
-                    ++y;
-                }
-                break;
+        for (int i = 0; i < ship.getSize(); i++) {
+            player.getSea()[y][x] = "o";
+            if ((ship.getPosition() == 1)) {
+                ++x;
+            } else {
+                ++y;
+            }
         }
+        player.setShip(ship);
     }
 
     public void seaSetUp(Player player) {

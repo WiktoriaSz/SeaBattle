@@ -43,13 +43,14 @@ public class SettingTest {
             int x = ship.getStartingPositionX();
             int y = ship.getStartingPositionY();
             int size = ship.getSize();
-            System.out.println("x = " + x);
-            System.out.println("y = " + y);
-            System.out.println("sea = " + sea[y][x]);
+            int position = ship.getPosition();
+            System.out.println("x = " + x + "  y = " + y + "  size = " + size + "  position = " + position);
             System.out.println(Arrays.deepToString(sea).replace("], ", "]\n").replace("o, ", "o   , "));
 
             if (ship.getPosition() == 1) {
                 System.out.println(check.checkAroundPlacementOfHorizontalShip(x, y, sea, size)); // todo - why print false when id ok?
+
+
 //                assertTrue(check.checkAroundPlacementOfHorizontalShip(x, y, sea, size));
             } else {
                 System.out.println(check.checkAroundPlacementOfVerticalShip(x, y, sea, size));
