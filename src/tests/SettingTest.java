@@ -1,4 +1,4 @@
-package com.tests;
+package tests;
 
 import com.Check;
 import com.Player;

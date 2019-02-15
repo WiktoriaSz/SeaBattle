@@ -82,17 +82,20 @@ public class SetUp {
     }
 
     public void shipPlacement(Player player, Ship ship, String[][] sea) {
+        List<BodyPosition> placement = new ArrayList<>();
         int x = ship.getStartingPositionX();
         int y = ship.getStartingPositionY();
         int position = ship.getPosition();
         for (int i = 0; i < ship.getSize(); i++) {
             sea[y][x] = "o";
+            placement.add(new BodyPosition(x, y));
             if (position == 1) {
                 ++x;
             } else {
                 ++y;
             }
         }
+        ship.setFullPlacement(placement);
         player.setShip(ship);
     }
 

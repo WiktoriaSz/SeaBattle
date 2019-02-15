@@ -1,11 +1,14 @@
 package com;
 
+import java.util.List;
+
 public class Ship {
     private int startingPositionX;
     private int startingPositionY;
     private int size;
     private int position;
     private Status status;
+    private List<BodyPosition> fullPlacement;
 
     public Ship(int startingPositionX, int startingPositionY, int size, int position) {
         this.startingPositionX = startingPositionX;
@@ -49,4 +52,13 @@ public class Ship {
     public void setStatus(Status status) {
         this.status = status;
     }
+
+    public List<BodyPosition> getFullPlacement() {
+        return fullPlacement;
+    }
+
+    public void setFullPlacement(List<BodyPosition> fullPlacement) {
+        this.fullPlacement = fullPlacement;
+    }
+
 }
