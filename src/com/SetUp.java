@@ -6,6 +6,7 @@ public class SetUp {
 
     private static List<Integer> shipSizes = new ArrayList<>();
     private Check check = new Check();
+    private Game game = new Game();
 
     static {
         shipSizes.addAll(Arrays.asList(4, 3, 3, 2, 2, 2, 1, 1, 1, 1));
@@ -97,6 +98,10 @@ public class SetUp {
         }
         ship.setFullPlacement(placement);
         player.setShip(ship);
+        if (player.isWhichPlayer()) {
+            System.out.println("Statek został umieszczony.\n");
+            System.out.println(game.board(sea));
+        }
     }
 
     public String[][] seaSetUp(Player player) {

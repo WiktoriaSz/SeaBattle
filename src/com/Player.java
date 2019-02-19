@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
+    private String name;
     private List<Ship> playerArmada = new ArrayList<>();
     private int points;
     private String[][] sea;
@@ -15,6 +16,11 @@ public class Player {
         this.points = 0;
         this.sea = new String[10][10];
         this.attackBoard = new String[10][10];
+        if(whichPlayer){
+            name = "Gracz";
+        } else {
+            name = "Komputer";
+        }
     }
 
     public List<Ship> getPlayerArmada() {
@@ -27,6 +33,10 @@ public class Player {
 
     public boolean isWhichPlayer() {
         return whichPlayer;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getPoints() {

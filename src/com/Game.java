@@ -2,40 +2,80 @@ package com;
 
 
 import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Game {
 
-    public Boolean attack(int x, int y, Player attacker, Player enemy) { // todo jeśli atakuje komputer + symulację inteligencji
+    public Boolean attack(int x, int y, Player attacker, Player enemy, String[][] enemySea) { // todo jeśli atakuje komputer + symulację inteligencji
         // checking for repeated moves, especially for computer input
-        if (enemy.getSea()[y][x].equals("m") || enemy.getSea()[y][x].equals("X")) {
-            System.out.println("Ta pozycja była zaatakowana już wcześniej. Spróbuj jeszcze raz.");
-            return true;
-        }
-
-        System.out.println("Zaatakowano pozycję x = " + x + ", y = " + y);
-        Ship ship = enemy.searchByPosition(x, y);
-        if (ship == null) { // szuka w armadzie przeciwnika
-            System.out.println("Pudło!");
-            attacker.getAttackBoard()[y][x] = "m";
-            enemy.getSea()[y][x] = "m";
+        if (enemySea[y][x] == null) {
+            attacker.getAttackBoard()[y][x] = ".";
+            enemySea[y][x] = ".";
+            System.out.println("\nPlansza ataku " + attacker.getName() +"a: \n" + board(attacker.getAttackBoard()));
+            System.out.println("Atakuje " + attacker.getName() + ", pozycje x = " + x + ", y = " + y + " : Pudło!");
             return false;
 
+        } else if ((enemySea[y][x].equals(".")) || (enemySea[y][x].equals("X"))) {
+            if (attacker.isWhichPlayer()) {
+                System.out.println("\nTa pozycja była zaatakowana już wcześniej. Spróbuj jeszcze raz.");
+            }
+            return true;
+
         } else {
+            Ship ship = enemy.searchByPosition(x, y);
             attacker.getAttackBoard()[y][x] = "X";
-            enemy.getSea()[y][x] = "X";
+            enemySea[y][x] = "X";
             for (BodyPosition placement : ship.getFullPlacement()) {
                 if (placement.getX() == x && placement.getY() == y) {
                     placement.setStatus(Status.DAMAGED);
                 }
             }
+            System.out.println("\nPlansza ataku " + attacker.getName() +"a: \n" + board(attacker.getAttackBoard()));
+            System.out.print("Atakuje " + attacker.getName() + ", pozycje x = " + x + ", y = " + y + " : ");
             shipCondition(ship);
-            System.out.println(board(attacker.getAttackBoard()));
 
             if (winningCondition(attacker, enemy)) {
                 return null;
             } else {
                 return true;
             }
+        }
+    }
+
+    public Boolean playerAttack(Player player, Player computer) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nPodaj pozycję poziomą (x) od 0 do 9.");
+        int x = scanner.nextInt();
+        System.out.println("Podaj pozycję pionową (y) od 0 do 9.");
+        int y = scanner.nextInt();
+        return attack(x, y, player, computer, computer.getSea());
+    }
+
+    public Boolean computerAttack(Player player, Player computer) {
+        Random random = new Random();
+        int x = random.nextInt(computer.getSea().length);
+        int y = random.nextInt(computer.getSea().length);
+        return attack(x, y, computer, player, player.getSea());
+    }
+
+    public void gameSequence(Player player, Player computer) {  // todo --> + zakryć wyświetlanie planszy gracza
+        Boolean attackOrder = true;
+
+        while (!winningCondition(player, computer) || !winningCondition(computer, player)) {
+            if (attackOrder == null){ // todo
+                break;
+            }
+
+            do {
+                attackOrder = playerAttack(player, computer);
+            } while (attackOrder);
+
+//            attackOrder = computerAttack(player, computer);
+
+            do {
+                attackOrder = computerAttack(player, computer);
+            } while (attackOrder);
         }
     }
 
@@ -84,8 +124,8 @@ public class Game {
                         .replace("null", "---")
                         .replace("o, ", " o , ")
                         .replace("o]", " o ]")
-                        .replace("m, ", " m , ")
-                        .replace("m]", " m ]")
+                        .replace("., ", " . , ")
+                        .replace(".]", " . ]")
                         .replace("X]", " X ]")
                         .replace("X, ", " X , ");
     }
