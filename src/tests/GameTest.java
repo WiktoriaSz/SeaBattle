@@ -19,24 +19,24 @@ public class GameTest {
     private String[][] playerTestSea;
 
     @Before
-    public void setUp(){
+    public void setUp() {
         setUp = new SetUp();
         computer = new Player(false);
         sea = setUp.seaSetUp(computer);
         player = new Player(true);
         game = new Game();
         List<Ship> temporary = new ArrayList<>();
-        temporary.addAll(Arrays.asList(new Ship(6,6,4,2),
-                new Ship(6,3,3,1),
-                new Ship(2,5,3,2),
-                new Ship(0,2,2,1),
-                new Ship(4,1,2,2),
-                new Ship(9,7,2,2),
-                new Ship(9,0,1,2),
-                new Ship(4,5,1,2),
-                new Ship(1,0,1,2),
-                new Ship(0,5,1,2)));
-        for(Ship ship : temporary){
+        temporary.addAll(Arrays.asList(new Ship(6, 6, 4, 2),
+                new Ship(6, 3, 3, 1),
+                new Ship(2, 5, 3, 2),
+                new Ship(0, 2, 2, 1),
+                new Ship(4, 1, 2, 2),
+                new Ship(9, 7, 2, 2),
+                new Ship(9, 0, 1, 2),
+                new Ship(4, 5, 1, 2),
+                new Ship(1, 0, 1, 2),
+                new Ship(0, 5, 1, 2)));
+        for (Ship ship : temporary) {
             setUp.shipPlacement(player, ship, player.getSea());
         }
         playerTestSea = player.getSea();

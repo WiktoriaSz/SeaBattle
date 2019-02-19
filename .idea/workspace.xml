@@ -4,9 +4,6 @@
     <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/SetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/SetUp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -72,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-294">
               <caret lean-forward="true" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -87,8 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="26">
+              <caret line="83" column="62" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2319#2320#0" expanded="true" />
@@ -116,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="332">
+              <caret line="137" column="16" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,9 +163,9 @@
         <option value="$PROJECT_DIR$/src/com/BodyPosition.java" />
         <option value="$PROJECT_DIR$/src/com/SetUp.java" />
         <option value="$PROJECT_DIR$/src/com/Player.java" />
+        <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/tests/GameTest.java" />
         <option value="$PROJECT_DIR$/src/com/Game.java" />
-        <option value="$PROJECT_DIR$/src/com/Main.java" />
       </list>
     </option>
   </component>
@@ -227,7 +224,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550603284759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550605073934" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Simple exercises/Basket_UnitTest" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -365,26 +362,11 @@
       <workItem from="1549975570771" duration="2382000" />
       <workItem from="1550064652471" duration="6837000" />
       <workItem from="1550233102432" duration="13850000" />
-      <workItem from="1550582638386" duration="20180000" />
+      <workItem from="1550582638386" duration="21988000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_attackTestOnPlayerSeaFailed - 2019.02.19 at 18h 08m 18s.xml">
-      <configuration name="GameTest.attackTestOnPlayerSeaFailed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_attackTestOnPlayerSeaFailed - 2019.02.19 at 18h 09m 23s.xml">
-      <configuration name="GameTest.attackTestOnPlayerSeaFailed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_attackTestOnPlayerSeaFailed - 2019.02.19 at 18h 19m 59s.xml">
-      <configuration name="GameTest.attackTestOnPlayerSeaFailed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_attackTestOnPlayerSeaFailed - 2019.02.19 at 18h 22m 51s.xml">
-      <configuration name="GameTest.attackTestOnPlayerSeaFailed" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_attackTestOnPlayerSeaFailed - 2019.02.19 at 18h 29m 47s.xml">
-      <configuration name="GameTest.attackTestOnPlayerSeaFailed" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_attackTestOnPlayerSeaFailed - 2019.02.19 at 18h 31m 21s.xml">
       <configuration name="GameTest.attackTestOnPlayerSeaFailed" configurationId="JUnit" />
     </history-entry>
@@ -400,13 +382,27 @@
     <history-entry file="GameTest_attackTestOnPlayerSeaRepeatedPlaceOfAttack - 2019.02.19 at 18h 38m 26s.xml">
       <configuration name="GameTest.attackTestOnPlayerSeaRepeatedPlaceOfAttack" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest_attackTestOnPlayerSeaRepeatedPlaceOfAttack - 2019.02.19 at 20h 14m 40s.xml">
+      <configuration name="GameTest.attackTestOnPlayerSeaRepeatedPlaceOfAttack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_attackTestOnPlayerSeaRepeatedPlaceOfAttack - 2019.02.19 at 20h 16m 49s.xml">
+      <configuration name="GameTest.attackTestOnPlayerSeaRepeatedPlaceOfAttack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_attackTestOnPlayerSeaRepeatedPlaceOfAttack - 2019.02.19 at 20h 22m 31s.xml">
+      <configuration name="GameTest.attackTestOnPlayerSeaRepeatedPlaceOfAttack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_attackTestOnPlayerSeaRepeatedPlaceOfAttack - 2019.02.19 at 20h 24m 44s.xml">
+      <configuration name="GameTest.attackTestOnPlayerSeaRepeatedPlaceOfAttack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_attackTestOnPlayerSeaRepeatedPlaceOfAttack - 2019.02.19 at 20h 29m 25s.xml">
+      <configuration name="GameTest.attackTestOnPlayerSeaRepeatedPlaceOfAttack" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153745000" />
+    <option name="totallyTimeSpent" value="155553000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30257186" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -703,8 +699,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="26">
+          <caret line="83" column="62" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2319#2320#0" expanded="true" />
@@ -713,20 +709,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="-294">
+          <caret lean-forward="true" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="332">
+          <caret line="137" column="16" selection-start-line="137" selection-start-column="16" selection-end-line="137" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

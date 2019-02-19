@@ -116,17 +116,25 @@ public class Game {
     }
 
     public String board(String[][] sea) {
-        return "  0x,  1x,  2x,  3x,  4x,  5x,  6x,  7x,  8x,  9x \n" +
-                Arrays.deepToString(sea)
-                        .replace("], ", "]\n")
-                        .replace("[[", "[")
-                        .replace("]]", "]")
-                        .replace("null", "---")
-                        .replace("o, ", " o , ")
-                        .replace("o]", " o ]")
-                        .replace("., ", " . , ")
-                        .replace(".]", " . ]")
-                        .replace("X]", " X ]")
-                        .replace("X, ", " X , ");
+        int y = 0;
+        StringBuilder temporBoard = new StringBuilder();
+        for (String[] row : sea) {
+            temporBoard = temporBoard.append(y).append("y ").append(Arrays.toString(row)).append(" ").append(y++).append("y\n");
+        }
+        String board = temporBoard.toString()
+                .replace("], ", "]\n")
+                .replace("[[", "[")
+                .replace("]]", "]")
+                .replace("null", "---")
+                .replace("o, ", " o , ")
+                .replace("o]", " o ]")
+                .replace("., ", " . , ")
+                .replace(".]", " . ]")
+                .replace("X]", " X ]")
+                .replace("X, ", " X , ");
+
+
+        return "    0x,  1x,  2x,  3x,  4x,  5x,  6x,  7x,  8x,  9x \n" + board +
+                "    0x,  1x,  2x,  3x,  4x,  5x,  6x,  7x,  8x,  9x";
     }
 }
