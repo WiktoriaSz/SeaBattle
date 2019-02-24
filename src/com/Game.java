@@ -12,7 +12,7 @@ public class Game {
         if (enemySea[y][x] == null) {
             attacker.getAttackBoard()[y][x] = ".";
             enemySea[y][x] = ".";
-            System.out.println("\nPlansza ataku " + attacker.getName() +"a: \n" + board(attacker.getAttackBoard()));
+            System.out.println("\nPlansza ataku " + attacker.getName() + "a: \n" + board(attacker.getAttackBoard()));
             System.out.println("Atakuje " + attacker.getName() + ", pozycje x = " + x + ", y = " + y + " : Pudło!");
             return false;
 
@@ -31,7 +31,7 @@ public class Game {
                     placement.setStatus(Status.DAMAGED);
                 }
             }
-            System.out.println("\nPlansza ataku " + attacker.getName() +"a: \n" + board(attacker.getAttackBoard()));
+            System.out.println("\nPlansza ataku " + attacker.getName() + "a: \n" + board(attacker.getAttackBoard()));
             System.out.print("Atakuje " + attacker.getName() + ", pozycje x = " + x + ", y = " + y + " : ");
             shipCondition(ship);
 
@@ -59,23 +59,21 @@ public class Game {
         return attack(x, y, computer, player, player.getSea());
     }
 
-    public void gameSequence(Player player, Player computer) {  // todo --> + zakryć wyświetlanie planszy gracza
+    public void gameSequence(Player player, Player computer) {
         Boolean attackOrder = true;
 
         while (!winningCondition(player, computer) || !winningCondition(computer, player)) {
-            if (attackOrder == null){ // todo
+
+            while (attackOrder){
+                attackOrder = playerAttack(player, computer);
+            }
+            if (attackOrder == null) { // todo
                 break;
             }
 
-            do {
-                attackOrder = playerAttack(player, computer);
-            } while (attackOrder);
-
-//            attackOrder = computerAttack(player, computer);
-
-            do {
+           do {
                 attackOrder = computerAttack(player, computer);
-            } while (attackOrder);
+            }  while (attackOrder);
         }
     }
 
@@ -119,7 +117,8 @@ public class Game {
         int y = 0;
         StringBuilder temporBoard = new StringBuilder();
         for (String[] row : sea) {
-            temporBoard = temporBoard.append(y).append("y ").append(Arrays.toString(row)).append(" ").append(y++).append("y\n");
+            temporBoard = temporBoard.append(y).append("y ").append(Arrays.toString(row))
+                    .append(" ").append(y++).append("y\n");
         }
         String board = temporBoard.toString()
                 .replace("], ", "]\n")
@@ -132,7 +131,6 @@ public class Game {
                 .replace(".]", " . ]")
                 .replace("X]", " X ]")
                 .replace("X, ", " X , ");
-
 
         return "    0x,  1x,  2x,  3x,  4x,  5x,  6x,  7x,  8x,  9x \n" + board +
                 "    0x,  1x,  2x,  3x,  4x,  5x,  6x,  7x,  8x,  9x";
