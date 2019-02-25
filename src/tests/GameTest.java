@@ -3,15 +3,12 @@ package tests;
 import com.*;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 public class GameTest {
-    private SetUp setUp;
     private Player computer;
     private String[][] sea;
     private Player player;
@@ -20,13 +17,13 @@ public class GameTest {
 
     @Before
     public void setUp() {
-        setUp = new SetUp();
+        SetUp setUp = new SetUp();
         computer = new Player(false);
         sea = setUp.seaSetUp(computer);
         player = new Player(true);
         game = new Game();
-        List<Ship> temporary = new ArrayList<>();
-        temporary.addAll(Arrays.asList(new Ship(6, 6, 4, 2),
+        List<Ship> temporary = new ArrayList<>(Arrays.asList(
+                new Ship(6, 6, 4, 2),
                 new Ship(6, 3, 3, 1),
                 new Ship(2, 5, 3, 2),
                 new Ship(0, 2, 2, 1),
@@ -88,10 +85,11 @@ public class GameTest {
         assertTrue(game.attack(4, 8, computer, player, playerTestSea));
         System.out.println(game.board(playerTestSea));
     }
-
-
-    @Test
-    public void ameSequenceTest() {
-        game.gameSequence(player, computer);
-    }
 }
+
+// todo:
+//    @Test
+//    public void ameSequenceTest() {
+//        game.gameSequence(player, computer);
+//    }
+//}

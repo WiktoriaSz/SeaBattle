@@ -14,7 +14,7 @@ public class Check {
                     return false;
                 }
             } else {
-                if ((sea[y + i][x] != null)) {  // initial placement + full ship placement
+                if ((sea[y + i][x] != null)) {
                     return false;
                 }
             }
@@ -22,19 +22,24 @@ public class Check {
         return true;
     }
 
+    private boolean checkSidesOfHorizontalShip(int x, int y, String[][] sea, int size) {
+        for (int i = 0; i < size; i++) {
+            if ((sea[y][x + i] != null)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public boolean checkAroundPlacementOfHorizontalShip(int x, int y, String[][] sea, int size) {
         if ((y - 1) >= 0) {
-            for (int i = 0; i < size; i++) {
-                if ((sea[y - 1][x + i] != null)) {
-                    return false;
-                }
+            if (!checkSidesOfHorizontalShip(x, (y - 1), sea, size)) {
+                return false;
             }
         }
         if ((y + 1) <= (sea.length - 1)) {
-            for (int i = 0; i < size; i++) {
-                if ((sea[y + 1][x + i] != null)) {
-                    return false;
-                }
+            if (!checkSidesOfHorizontalShip(x, (y + 1), sea, size)) {
+                return false;
             }
         }
         if ((x - 1) >= 0) {
@@ -50,19 +55,24 @@ public class Check {
         return true;
     }
 
+    private boolean checkSidesOfVerticalShip(int x, int y, String[][] sea, int size) {
+        for (int i = 0; i < size; i++) {
+            if ((sea[y + i][x] != null)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     public boolean checkAroundPlacementOfVerticalShip(int x, int y, String[][] sea, int size) {
         if ((x - 1) >= 0) {
-            for (int i = 0; i < size; i++) {
-                if ((sea[y + i][x - 1]) != null) {
-                    return false;
-                }
+            if (!checkSidesOfVerticalShip((x - 1), y, sea, size)) {
+                return false;
             }
         }
         if ((x + 1) <= (sea.length - 1)) {
-            for (int i = 0; i < size; i++) {
-                if ((sea[y + i][x + 1]) != null) {
-                    return false;
-                }
+            if (!checkSidesOfVerticalShip((x + 1), y, sea, size)) {
+                return false;
             }
         }
         if ((y - 1) >= 0) {

@@ -4,17 +4,22 @@ import com.Check;
 import com.Player;
 import com.SetUp;
 import com.Ship;
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class CheckTest {
 
-    private Check check = new Check();
-    private static Player p1 = new Player(true);
-    private static SetUp setUp = new SetUp();
-    private static Ship ship = new Ship(2, 3, 4, 1);
+    private Check check;
+    private Player p1;
+    private Ship ship;
 
-    static {
+    @Before
+    public void setUp(){
+        check = new Check();
+        p1 = new Player(true);
+        SetUp setUp = new SetUp();
+        ship = new Ship(2, 3, 4, 1);
         p1.setShip(ship);
         setUp.shipPlacement(p1, ship, p1.getSea());
     }

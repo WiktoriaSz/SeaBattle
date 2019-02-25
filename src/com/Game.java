@@ -8,38 +8,63 @@ import java.util.Scanner;
 public class Game {
 
     public Boolean attack(int x, int y, Player attacker, Player enemy, String[][] enemySea) { // todo jeśli atakuje komputer + symulację inteligencji
-        // checking for repeated moves, especially for computer input
         if (enemySea[y][x] == null) {
-            attacker.getAttackBoard()[y][x] = ".";
-            enemySea[y][x] = ".";
-            System.out.println("\nPlansza ataku " + attacker.getName() + "a: \n" + board(attacker.getAttackBoard()));
-            System.out.println("Atakuje " + attacker.getName() + ", pozycje x = " + x + ", y = " + y + " : Pudło!");
+            attackMapNotation(x, y, attacker.getAttackBoard(), enemySea, true);
+            showAttackView(x, y, attacker.getName(), board(attacker.getAttackBoard()), 1);
             return false;
 
         } else if ((enemySea[y][x].equals(".")) || (enemySea[y][x].equals("X"))) {
             if (attacker.isWhichPlayer()) {
-                System.out.println("\nTa pozycja była zaatakowana już wcześniej. Spróbuj jeszcze raz.");
+                showAttackView(x, y, attacker.getName(), board(attacker.getAttackBoard()), 2);
             }
             return true;
 
         } else {
-            Ship ship = enemy.searchByPosition(x, y);
-            attacker.getAttackBoard()[y][x] = "X";
-            enemySea[y][x] = "X";
-            for (BodyPosition placement : ship.getFullPlacement()) {
-                if (placement.getX() == x && placement.getY() == y) {
-                    placement.setStatus(Status.DAMAGED);
-                }
-            }
-            System.out.println("\nPlansza ataku " + attacker.getName() + "a: \n" + board(attacker.getAttackBoard()));
-            System.out.print("Atakuje " + attacker.getName() + ", pozycje x = " + x + ", y = " + y + " : ");
-            shipCondition(ship);
+            attackMapNotation(x, y, attacker.getAttackBoard(), enemySea, false);
+            showAttackView(x, y, attacker.getName(), board(attacker.getAttackBoard()), 3);
+            shipCondition(consequencesOfSuccessfulAttack(x, y, enemy));
 
             if (winningCondition(attacker, enemy)) {
                 return null;
             } else {
                 return true;
             }
+        }
+    }
+
+    private Ship consequencesOfSuccessfulAttack(int x, int y, Player enemy) {
+        Ship ship = enemy.searchByPosition(x, y);
+        for (BodyPosition placement : ship.getFullPlacement()) {
+            if (placement.getX() == x && placement.getY() == y) {
+                placement.setStatus(Status.DAMAGED);
+            }
+        }
+        return ship;
+    }
+
+    private void attackMapNotation(int x, int y, String[][] attackBoard, String[][] enemySea, boolean missed) {
+        if (missed) {
+            attackBoard[y][x] = ".";
+            enemySea[y][x] = ".";
+        } else {
+            attackBoard[y][x] = "X";
+            enemySea[y][x] = "X";
+        }
+    }
+
+    private void showAttackView(int x, int y, String attackersName, String board, int switchNumber) {
+        switch (switchNumber) {
+            case 1:
+                System.out.println("\nPlansza ataku " + attackersName + "a: \n" + board);
+                System.out.println("Atakuje " + attackersName + ", pozycje x = " + x + ", y = " + y + " : Pudło!");
+                break;
+            case 2:
+                System.out.println("\nTa pozycja była zaatakowana już wcześniej. Spróbuj jeszcze raz.");
+                break;
+            case 3:
+                System.out.println("\nPlansza ataku " + attackersName + "a: \n" + board);
+                System.out.print("Atakuje " + attackersName + ", pozycje x = " + x + ", y = " + y + " : ");
+                break;
         }
     }
 
@@ -59,22 +84,79 @@ public class Game {
         return attack(x, y, computer, player, player.getSea());
     }
 
+    private Boolean advancedComputerAttack(Player player, Player computer, String[][] attackBoard) {
+        for (int i = 0; i < attackBoard.length; i++) {
+            for (int j = 0; j < attackBoard[i].length; j++) {
+                if (attackBoard[i][j].equals("X") && player.searchByPosition(j, i).getStatus() != Status.SUNK) {
+                    // switch(checkAround(j, i, attackBoard){
+                    // case 1, 3:
+                    // return attack((j + 1), i, computer, player, player.getSea());
+                    // break;
+                    // case 2:
+                    // return attack(j, (i + 1), computer, player, player.getSea());
+                    // break;
+                    // case 4, 6: // sprawdza dalej w prawo - można nic nie robić
+                    // break;
+                    // case 5:
+                    // continue;
+                    // break;}
+
+                }
+            }
+        }
+        return computerAttack(player, computer);
+    }
+
+    private int checkAround(int x, int y, String[][] attackBoard) {
+        int check = 0;
+        if (x + 1 < attackBoard.length) {
+            if (attackBoard[y][x + 1] == null) { // sprawdź w dół + jakiś oznacznik (check)
+                check += 1;
+            }
+            if (attackBoard[y][x + 1].equals("X")){
+                check += 4;
+            }
+        }
+        if (y + 1 < attackBoard.length) { // sprawdź w dół}
+            if (attackBoard[y + 1][x] == null) {
+                check += 2;
+            }
+            if (attackBoard[y + 1][x].equals("X")) {
+                check += 5;
+            }
+        }
+        return check;
+    }
+    // check = 6 -> sprawdź w prawo
+    // check = 5 -> sprawdź w dół
+    // check = 4 -> sprawdzać w prawo
+    // check = 3 -> współrzędne z j +1
+    // check = 2 ->  współrzędne z i +1
+    // check = 1 -> współrzędne z j +1
+    // check = 0 -> nic nie robić, sprawdzać dalej
+
+    // switch(checkAround){ case 1, 3: break; case 2: break; case 4, 6: break; case 5: break;}
+
     public void gameSequence(Player player, Player computer) {
         Boolean attackOrder = true;
 
         while (!winningCondition(player, computer) || !winningCondition(computer, player)) {
 
-            while (attackOrder){
+            while (attackOrder) {
                 attackOrder = playerAttack(player, computer);
             }
-            if (attackOrder == null) { // todo
-                break;
-            }
 
-           do {
+            do {
                 attackOrder = computerAttack(player, computer);
-            }  while (attackOrder);
+
+                // todo:
+//                if(attackOrder == true){
+                // while(attackOrder){
+//                    attackOrder = advancedComputerAttack;
+//                }
+            } while (attackOrder);
         }
+
     }
 
     private void shipCondition(Ship ship) {

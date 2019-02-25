@@ -1,28 +1,31 @@
 package tests;
 
-import com.Check;
-import com.Player;
-import com.SetUp;
-import com.Ship;
+import com.*;
+import org.junit.Before;
 import org.junit.Test;
-
-import java.util.Arrays;
-
 import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertTrue;
 
 public class SettingTest {
 
-    private Check check = new Check();
-    private SetUp setUp = new SetUp();
-    static private Player p2 = new Player(false);
-    private String[][] sea = setUp.seaSetUp(p2);
+    private String[][] sea;
+    private Game game;
+    private Check check;
+    private Player p2;
+
+    @Before
+    public void setUp(){
+        check = new Check();
+        p2 = new Player(false);
+        SetUp setUp = new SetUp();
+        sea = setUp.seaSetUp(p2);
+        game = new Game();
+    }
 
     @Test
     public void seaArraySettingTest() {
 
-        System.out.println(Arrays.deepToString(sea)
-                .replace("], ", "]\n").replace("o, ", "o   , "));
+        System.out.println(game.board(sea));
         int x = p2.getPlayerArmada().get(1).getStartingPositionX();
         int y = p2.getPlayerArmada().get(1).getStartingPositionY();
         System.out.println("x = " + x + "  y = " + y);
@@ -33,10 +36,9 @@ public class SettingTest {
     }
 
     @Test
-    public void seaSettingTest2() { // todo in some cases it lags
+    public void seaSettingTest2() {
         System.out.println("Armada's size = " + p2.getPlayerArmada().size());
-        System.out.println(Arrays.deepToString(sea)
-                .replace("], ", "]\n").replace("o, ", "o   , "));
+        System.out.println(game.board(sea));
 
         for (Ship ship : p2.getPlayerArmada()) {
             int x = ship.getStartingPositionX();
