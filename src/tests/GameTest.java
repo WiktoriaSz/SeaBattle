@@ -85,6 +85,25 @@ public class GameTest {
         assertTrue(game.attack(4, 8, computer, player, playerTestSea));
         System.out.println(game.board(playerTestSea));
     }
+
+    @Test
+    public void advancedComputerAttackTest() {
+        System.out.println(game.board(playerTestSea));
+        game.attack(6, 1, computer, player, playerTestSea);
+        game.attack(4, 1, computer, player, playerTestSea);
+        game.attack(4, 4, computer, player, playerTestSea);
+        game.attack(2, 7, computer, player, playerTestSea);
+        game.attack(3, 7, computer, player, playerTestSea);
+        game.attack(0, 2, computer, player, playerTestSea);
+        game.attack(0, 3, computer, player, playerTestSea);
+
+        assertFalse(game.advancedComputerAttack(player,computer,computer.getAttackBoard()));
+        assertTrue(game.advancedComputerAttack(player,computer,computer.getAttackBoard()));
+        assertTrue(game.advancedComputerAttack(player,computer,computer.getAttackBoard()));
+        assertFalse(game.advancedComputerAttack(player,computer,computer.getAttackBoard()));
+        game.attack(2, 6, computer, player, playerTestSea);
+        game.advancedComputerAttack(player,computer,computer.getAttackBoard());
+    }
 }
 
 // todo:

@@ -84,23 +84,43 @@ public class Game {
         return attack(x, y, computer, player, player.getSea());
     }
 
-    private Boolean advancedComputerAttack(Player player, Player computer, String[][] attackBoard) {
+    public Boolean advancedComputerAttack(Player player, Player computer, String[][] attackBoard) {
         for (int i = 0; i < attackBoard.length; i++) {
             for (int j = 0; j < attackBoard[i].length; j++) {
+                if (attackBoard[i][j] == null || attackBoard[i][j].equals(".")) {
+                    continue;
+                }
                 if (attackBoard[i][j].equals("X") && player.searchByPosition(j, i).getStatus() != Status.SUNK) {
-                    // switch(checkAround(j, i, attackBoard){
-                    // case 1, 3:
-                    // return attack((j + 1), i, computer, player, player.getSea());
-                    // break;
-                    // case 2:
-                    // return attack(j, (i + 1), computer, player, player.getSea());
-                    // break;
-                    // case 4, 6: // sprawdza dalej w prawo - można nic nie robić
-                    // break;
-                    // case 5:
-                    // continue;
-                    // break;}
+                    switch (checkAround(j, i, attackBoard)) {
+                        case 4:
+                        case 8:
+                            System.out.println("atak na = " + attackBoard[i][j + 1] + ", x = " + (j + 1) + ", y = " + i);
+                            return attack((j + 1), i, computer, player, player.getSea());
+                        case 10:
+                            System.out.println("atak na = " + attackBoard[i + 1][j] + ", x = " + j + ", y = " + (i + 1));
+                            return attack(j, (i + 1), computer, player, player.getSea());
 
+//                        case 6:
+//                        case 12:   // ukierunkowany atak w górę lub w dół - trzeba sprawdzić warunki
+//                            System.out.println("Atak tylko w górę");
+//                            System.out.println("atak na = " + attackBoard[i - 1][j] + ", x = " + j + ", y = " + (i + 1));
+//                            return attack(j, (i - 1), computer, player, player.getSea());
+//
+//                        case 7:
+//                        case 11:  // ukierunkowany atak w bok <-->
+//
+//                        case 14:  // random w górę lub wstecz - uwaga - warunki
+//                            Random random = new Random();
+//                            if (random.nextInt(2) == 0) {
+//                                System.out.println("Atak w górę");
+//                                System.out.println("atak na = " + attackBoard[i - 1][j] + ", x = " + j + ", y = " + (i + 1));
+//                                return attack(j, (i - 1), computer, player, player.getSea());
+//                            } else {
+//                                System.out.println("Atak wstecz");
+//                                System.out.println("atak na = " + attackBoard[i][j - 1] + ", x = " + (j + 1) + ", y = " + i);
+//                                return attack((j - 1), i, computer, player, player.getSea());
+//                            }
+                    }
                 }
             }
         }
@@ -112,30 +132,23 @@ public class Game {
         if (x + 1 < attackBoard.length) {
             if (attackBoard[y][x + 1] == null) { // sprawdź w dół + jakiś oznacznik (check)
                 check += 1;
-            }
-            if (attackBoard[y][x + 1].equals("X")){
+            } else if (attackBoard[y][x + 1].equals("X")) {
                 check += 4;
+            } else if (attackBoard[y][x + 1].equals(".")) {
+                check += 7;
             }
         }
         if (y + 1 < attackBoard.length) { // sprawdź w dół}
             if (attackBoard[y + 1][x] == null) {
-                check += 2;
-            }
-            if (attackBoard[y + 1][x].equals("X")) {
+                check += 3;
+            } else if (attackBoard[y + 1][x].equals("X")) {
                 check += 5;
+            } else if (attackBoard[y + 1][x].equals(".")) {
+                check += 7;
             }
         }
         return check;
     }
-    // check = 6 -> sprawdź w prawo
-    // check = 5 -> sprawdź w dół
-    // check = 4 -> sprawdzać w prawo
-    // check = 3 -> współrzędne z j +1
-    // check = 2 ->  współrzędne z i +1
-    // check = 1 -> współrzędne z j +1
-    // check = 0 -> nic nie robić, sprawdzać dalej
-
-    // switch(checkAround){ case 1, 3: break; case 2: break; case 4, 6: break; case 5: break;}
 
     public void gameSequence(Player player, Player computer) {
         Boolean attackOrder = true;
@@ -146,17 +159,13 @@ public class Game {
                 attackOrder = playerAttack(player, computer);
             }
 
-            do {
-                attackOrder = computerAttack(player, computer);
-
-                // todo:
-//                if(attackOrder == true){
-                // while(attackOrder){
-//                    attackOrder = advancedComputerAttack;
-//                }
-            } while (attackOrder);
+            attackOrder = computerAttack(player, computer);
+            if (attackOrder) {
+                while (attackOrder) {
+                    attackOrder = advancedComputerAttack(player, computer, computer.getAttackBoard());
+                }
+            }
         }
-
     }
 
     private void shipCondition(Ship ship) {
