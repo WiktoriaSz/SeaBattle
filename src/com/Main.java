@@ -31,6 +31,14 @@ public class Main {
         // -----------------------should be:
         // player.setSea(setUp.seaSetUp(player));
 
+        // game api:
+        // 1. my board
+        // 2. my attack board
+        // 3. attack
+        // 4. check status of enemy ship
+        // 5. check status of a ship ? - można sprawdzić na swojej planszy
+
+
         game.gameSequence(player, computer);
     }
 }

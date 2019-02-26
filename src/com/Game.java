@@ -84,6 +84,7 @@ public class Game {
         return attack(x, y, computer, player, player.getSea());
     }
 
+    // todo: switch nie bierze pod uwagę krawędzi planszy z switchInput!!!
     public Boolean advancedComputerAttack(Player player, Player computer, String[][] attackBoard) {
         for (int i = 0; i < attackBoard.length; i++) {
             for (int j = 0; j < attackBoard[i].length; j++) {
@@ -91,7 +92,8 @@ public class Game {
                     continue;
                 }
                 if (attackBoard[i][j].equals("X") && player.searchByPosition(j, i).getStatus() != Status.SUNK) {
-                    switch (checkAround(j, i, attackBoard)) {
+                    int switchInput = checkAroundRightDown(j, i, attackBoard);
+                    switch (switchInput) {
                         case 4:
                         case 8:
                             System.out.println("atak na = " + attackBoard[i][j + 1] + ", x = " + (j + 1) + ", y = " + i);
@@ -99,27 +101,12 @@ public class Game {
                         case 10:
                             System.out.println("atak na = " + attackBoard[i + 1][j] + ", x = " + j + ", y = " + (i + 1));
                             return attack(j, (i + 1), computer, player, player.getSea());
-
-//                        case 6:
-//                        case 12:   // ukierunkowany atak w górę lub w dół - trzeba sprawdzić warunki
-//                            System.out.println("Atak tylko w górę");
-//                            System.out.println("atak na = " + attackBoard[i - 1][j] + ", x = " + j + ", y = " + (i + 1));
-//                            return attack(j, (i - 1), computer, player, player.getSea());
-//
-//                        case 7:
-//                        case 11:  // ukierunkowany atak w bok <-->
-//
-//                        case 14:  // random w górę lub wstecz - uwaga - warunki
-//                            Random random = new Random();
-//                            if (random.nextInt(2) == 0) {
-//                                System.out.println("Atak w górę");
-//                                System.out.println("atak na = " + attackBoard[i - 1][j] + ", x = " + j + ", y = " + (i + 1));
-//                                return attack(j, (i - 1), computer, player, player.getSea());
-//                            } else {
-//                                System.out.println("Atak wstecz");
-//                                System.out.println("atak na = " + attackBoard[i][j - 1] + ", x = " + (j + 1) + ", y = " + i);
-//                                return attack((j - 1), i, computer, player, player.getSea());
-//                            }
+                        case 6:
+                        case 12:
+                        case 7:
+                        case 11:
+                        case 14:
+                            return directedComputerAttack(j, i, attackBoard, player, computer, switchInput);
                     }
                 }
             }
@@ -127,7 +114,62 @@ public class Game {
         return computerAttack(player, computer);
     }
 
-    private int checkAround(int x, int y, String[][] attackBoard) {
+    private Boolean randomDirectionAttack(int x, int y, String[][] attackBoard, Player player, Player computer) {
+        int check = 0;
+        if ((y - 1) > 0 && attackBoard[y - 1][x] == null) {
+            check += 1;
+        }
+        if ((x - 1) > 0 && attackBoard[y][x - 1] == null) {
+            check += 2;
+        }
+        Random random = new Random();
+        if ((check == 1) || (check == 3) && (random.nextInt(2) == 0)) {
+            System.out.println("Random atak na = " + attackBoard[y - 1][x] + ", x = " + x + ", y = " + (y - 1));
+            return attack(x, (y - 1), computer, player, player.getSea());
+        } else {
+            System.out.println("Random atak na = " + attackBoard[y][x - 1] + ", x = " + (x - 1) + ", y = " + y);
+            return attack((x - 1), y, computer, player, player.getSea());
+        }
+    }
+
+    private Boolean directedComputerAttack(int x, int y, String[][] attackBoard, Player player, Player computer, int switchInput) {
+        if (switchInput == 6 || switchInput == 12) {
+            if ((y - 1) > 0 && attackBoard[y - 1][x] == null) {
+                System.out.println("Directed atak na = " + attackBoard[y - 1][x] + ", x = " + x +
+                        ", y = " + (y - 1));
+                return attack(x, (y - 1), computer, player, player.getSea());
+            } else {
+                if (attackBoard[y + 2][x] == null) {
+                    System.out.println("Directed atak na = " + attackBoard[y + 2][x] + ", x = " + x +
+                            ", y = " + (y + 2));
+                    return attack(x, (y + 2), computer, player, player.getSea());
+                } else if (attackBoard[y + 2][x].equals("X")) {
+                    System.out.println("Directed atak na = " + attackBoard[y + 3][x] + ", x = " + x +
+                            ", y = " + (y + 3));
+                    return attack(x, (y + 3), computer, player, player.getSea());
+                }
+            }
+        } else if (switchInput == 7 || switchInput == 11) {
+            if ((x - 1) > 0 && attackBoard[y][x - 1] == null) {
+                System.out.println("Directed atak na = " + attackBoard[y][x - 1] + ", x = " + (x -1) +
+                        ", y = " + y);
+                return attack((x - 1), y, computer, player, player.getSea());
+            } else {
+                if (attackBoard[y][x + 2] == null) {
+                    System.out.println("Directed atak na = " + attackBoard[y][x + 2] + ", x = " + (x+2) +
+                            ", y = " + y);
+                    return attack((x + 2), y, computer, player, player.getSea());
+                } else if (attackBoard[y][x + 2].equals("X")) {
+                    System.out.println("Directed atak na = " + attackBoard[y][x + 3] + ", x = " + (x+3) +
+                            ", y = " + y);
+                    return attack((x + 3), y, computer, player, player.getSea());
+                }
+            }
+        }
+        return randomDirectionAttack(x, y, attackBoard, player, computer);
+    }
+
+    private int checkAroundRightDown(int x, int y, String[][] attackBoard) {
         int check = 0;
         if (x + 1 < attackBoard.length) {
             if (attackBoard[y][x + 1] == null) { // sprawdź w dół + jakiś oznacznik (check)
