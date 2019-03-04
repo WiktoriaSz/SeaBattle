@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SeaBattle/tests/GameTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SeaBattle/tests/GameTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GameTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +21,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
+            <state relative-caret-position="799">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -49,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+            <state relative-caret-position="332">
+              <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-404">
+            <state relative-caret-position="68">
               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
@@ -70,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/BodyPosition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="340">
               <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="e#265#266#0" expanded="true" />
@@ -85,23 +87,53 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="86" column="71" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
+            <state relative-caret-position="179">
+              <caret line="490" column="26" selection-start-line="490" selection-start-column="26" selection-end-line="490" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;method#attack#0;class#Game#0" />
+                <element signature="method#attack#0;class#Game#0" />
+                <element signature="docComment;method#consequencesOfSuccessfulAttack#0;class#Game#0" />
+                <element signature="method#consequencesOfSuccessfulAttack#0;class#Game#0" />
+                <element signature="docComment;method#attackMapNotation#0;class#Game#0" />
+                <element signature="method#attackMapNotation#0;class#Game#0" />
+                <element signature="docComment;method#showAttackView#0;class#Game#0" />
+                <element signature="method#showAttackView#0;class#Game#0" />
+                <element signature="docComment;method#playerAttack#0;class#Game#0" />
                 <element signature="method#playerAttack#0;class#Game#0" />
+                <element signature="docComment;method#gameSequence#0;class#Game#0" />
+                <element signature="method#gameSequence#0;class#Game#0" />
+                <element signature="docComment;method#shipCondition#0;class#Game#0" />
+                <element signature="method#shipCondition#0;class#Game#0" />
+                <element signature="docComment;method#winningCondition#0;class#Game#0" />
+                <element signature="method#winningCondition#0;class#Game#0" />
+                <element signature="docComment;method#board#0;class#Game#0" />
+                <element signature="method#board#0;class#Game#0" />
+                <element signature="docComment;method#computerAttack#0;class#Game#0" />
+                <element signature="method#computerAttack#0;class#Game#0" />
+                <element signature="docComment;method#randomDirectionAttack#0;class#Game#0" />
+                <element signature="method#randomDirectionAttack#0;class#Game#0" />
+                <element signature="e#15353#15376#0" />
+                <element signature="docComment;method#checkUp#0;class#Game#0" />
+                <element signature="method#checkUp#0;class#Game#0" />
+                <element signature="docComment;method#checkRight#0;class#Game#0" />
+                <element signature="method#checkRight#0;class#Game#0" />
+                <element signature="docComment;method#checkDown#0;class#Game#0" />
+                <element signature="method#checkDown#0;class#Game#0" />
+                <element signature="e#22188#22231#1" />
+                <element signature="e#22545#23081#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="2601">
               <caret line="161" column="96" selection-start-line="161" selection-start-column="96" selection-end-line="161" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -140,9 +172,9 @@
         <option value="$PROJECT_DIR$/src/com/Check.java" />
         <option value="$PROJECT_DIR$/src/tests/CheckTest.java" />
         <option value="$PROJECT_DIR$/src/tests/SettingTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/GameTest.java" />
         <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/Game.java" />
-        <option value="$PROJECT_DIR$/src/tests/GameTest.java" />
       </list>
     </option>
   </component>
@@ -162,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,6 +222,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -201,7 +233,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551194427648" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551738272098" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -224,7 +256,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.advancedComputerAttackTest_AttackNext">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameTest.advancedComputerAttackTest_AttackBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeaBattle" />
       <extension name="coverage">
@@ -236,22 +281,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.GameTest" />
       <option name="METHOD_NAME" value="advancedComputerAttackTest_AttackBack" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.advancedComputerAttackTest_AttackLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeaBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GameTest" />
-      <option name="METHOD_NAME" value="advancedComputerAttackTest_AttackLeft" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -307,11 +336,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackNext" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackRandomDirection" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackRandom" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackBack" />
-        <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackLeft" />
       </list>
     </recent_temporary>
   </component>
@@ -346,14 +375,16 @@
       <workItem from="1550661515600" duration="1644000" />
       <workItem from="1551014195556" duration="621000" />
       <workItem from="1551088571994" duration="17597000" />
-      <workItem from="1551170519642" duration="18984000" />
+      <workItem from="1551170519642" duration="19645000" />
+      <workItem from="1551268996569" duration="10220000" />
+      <workItem from="1551534948611" duration="606000" />
+      <workItem from="1551536238871" duration="598000" />
+      <workItem from="1551622603855" duration="3239000" />
+      <workItem from="1551694040553" duration="14295000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRandom - 2019.02.26 at 16h 13m 09s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRandom" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_advancedComputerAttackTest_AttackRandomDirection - 2019.02.26 at 16h 13m 32s.xml">
       <configuration name="GameTest.advancedComputerAttackTest_AttackRandomDirection" configurationId="JUnit" />
     </history-entry>
@@ -381,15 +412,18 @@
     <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.02.26 at 16h 19m 10s.xml">
       <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.02.27 at 19h 56m 39s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194475000" />
+    <option name="totallyTimeSpent" value="224094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3207262" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3472012" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -398,8 +432,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32242227" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45826513" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32242227" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45826513" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -461,13 +495,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Main.java</url>
-          <line>41</line>
+          <line>142</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>93</line>
+          <line>142</line>
           <properties />
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -479,25 +513,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>242</line>
+          <line>216</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>244</line>
+          <line>218</line>
           <properties />
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>41</line>
+          <line>76</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>219</line>
+          <line>183</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -506,30 +540,6 @@
           <line>165</line>
           <properties />
           <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>134</line>
-          <properties class="com.Game" method="directedComputerAttack">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>116</line>
-          <properties class="com.Game" method="randomDirectionAttack">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>87</line>
-          <properties class="com.Game" method="advancedComputerAttack">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -713,67 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/BodyPosition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#480#481#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#830#831#0" expanded="true" />
-            <element signature="e#861#862#0" expanded="true" />
-            <element signature="e#888#889#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-            <element signature="e#1145#1146#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1217#1218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -810,23 +759,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="86" column="71" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
+        <state relative-caret-position="799">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#playerAttack#0;class#Game#0" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#715#716#0" expanded="true" />
+            <element signature="e#758#759#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#861#862#0" expanded="true" />
+            <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1069#1070#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1145#1146#0" expanded="true" />
+            <element signature="e#1187#1188#0" expanded="true" />
+            <element signature="e#1217#1218#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/SetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/BodyPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="2601">
           <caret line="161" column="96" selection-start-line="161" selection-start-column="96" selection-end-line="161" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="81" column="31" selection-start-line="81" selection-start-column="31" selection-end-line="81" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="490" column="26" selection-start-line="490" selection-start-column="26" selection-end-line="490" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#attack#0;class#Game#0" />
+            <element signature="method#attack#0;class#Game#0" />
+            <element signature="docComment;method#consequencesOfSuccessfulAttack#0;class#Game#0" />
+            <element signature="method#consequencesOfSuccessfulAttack#0;class#Game#0" />
+            <element signature="docComment;method#attackMapNotation#0;class#Game#0" />
+            <element signature="method#attackMapNotation#0;class#Game#0" />
+            <element signature="docComment;method#showAttackView#0;class#Game#0" />
+            <element signature="method#showAttackView#0;class#Game#0" />
+            <element signature="docComment;method#playerAttack#0;class#Game#0" />
+            <element signature="method#playerAttack#0;class#Game#0" />
+            <element signature="docComment;method#gameSequence#0;class#Game#0" />
+            <element signature="method#gameSequence#0;class#Game#0" />
+            <element signature="docComment;method#shipCondition#0;class#Game#0" />
+            <element signature="method#shipCondition#0;class#Game#0" />
+            <element signature="docComment;method#winningCondition#0;class#Game#0" />
+            <element signature="method#winningCondition#0;class#Game#0" />
+            <element signature="docComment;method#board#0;class#Game#0" />
+            <element signature="method#board#0;class#Game#0" />
+            <element signature="docComment;method#computerAttack#0;class#Game#0" />
+            <element signature="method#computerAttack#0;class#Game#0" />
+            <element signature="docComment;method#randomDirectionAttack#0;class#Game#0" />
+            <element signature="method#randomDirectionAttack#0;class#Game#0" />
+            <element signature="e#15353#15376#0" />
+            <element signature="docComment;method#checkUp#0;class#Game#0" />
+            <element signature="method#checkUp#0;class#Game#0" />
+            <element signature="docComment;method#checkRight#0;class#Game#0" />
+            <element signature="method#checkRight#0;class#Game#0" />
+            <element signature="docComment;method#checkDown#0;class#Game#0" />
+            <element signature="method#checkDown#0;class#Game#0" />
+            <element signature="e#22188#22231#1" />
+            <element signature="e#22545#23081#0" />
           </folding>
         </state>
       </provider>
