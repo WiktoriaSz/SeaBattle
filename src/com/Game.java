@@ -363,7 +363,7 @@ public class Game {
         int check = 0;
         if (y - 1 < 0) { // x is beside the end of board
             check += 22;
-        } else if (x - 1 == 0) {
+        } else if (y - 1 >= 0) {
             if (attackBoard[y - 1][x] == null) {
                 check += 31;
             } else if (attackBoard[y - 1][x].equals("X")) {
@@ -441,7 +441,7 @@ public class Game {
         int check = 0;
         if (x - 1 < 0) { // x is beside the end of board
             check += 4;
-        } else if (x - 1 == 0) {
+        } else if (x - 1 >= 0) {
             if (attackBoard[y][x - 1] == null) {
                 check += 36;
             } else if (attackBoard[y][x - 1].equals("X")) {
@@ -489,23 +489,18 @@ public class Game {
      * @param computer    a Player object representing the computer player.
      * @param attackBoard attacking Player's (computer's) view of second Player's personal board - sea.
      * @param switchInput input from switchInputDependingOnSituationAround method.
-     * @return redirects to main attack method with proper directions.
-     * @see com.Game#switchInputDependingOnSituationAround
+     * @return redirects to main attack method with proper directions. Never returns null.
+     * @see com.Game#switchInputDependingOnSituationAround(int, int, String[][])
      */
-    // todo: potem usunąć sout i attackBoard z parametrów, dokończyć return
     private Boolean switchRedirectionForComputerAttack(int x, int y, String[][] attackBoard,
                                                        Player player, Player computer, int switchInput) {
         if (switchInput == 1) {
-            System.out.println("atak na = " + attackBoard[y][x + 1] + ", x = " + (x + 1) + ", y = " + y);
             return attack((x + 1), y, computer, player, player.getSea());
         } else if (switchInput == 2) {
-            System.out.println("atak na = " + attackBoard[y + 1][x] + ", x = " + x + ", y = " + (y + 1));
             return attack(x, (y + 1), computer, player, player.getSea());
         } else if (switchInput == 3 || switchInput == 5) {
-            System.out.println("atak na = " + attackBoard[y][x - 1] + ", x = " + (x - 1) + ", y = " + y);
             return attack((x - 1), y, computer, player, player.getSea());
         } else if (switchInput == 4 || switchInput == 6) {
-            System.out.println("atak na = " + attackBoard[y - 1][x] + ", x = " + x + ", y = " + (y - 1));
             return attack(x, (y - 1), computer, player, player.getSea());
         } else if (switchInput == 7) {
             return randomDirectionAttack(x, y, attackBoard, player, computer);

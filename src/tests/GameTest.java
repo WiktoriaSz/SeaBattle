@@ -106,66 +106,57 @@ public class GameTest {
 
     @Test
     public void advancedComputerAttackTest_AttackLeft() {
-        System.out.println("*****************FAILED*************************************************");
+        System.out.println("****************************************************************************");
         assertFalse(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
     }
 
-//    @Test
-//    public void advancedComputerAttackTest_AttackDown() {
-//        game.attack(5, 1, computer, player, playerTestSea);
-//        System.out.println("****************************************************************************");
-//        assertTrue(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
-//    }
-//
-//    private void secondarySetUp() {
-//        game.attack(5, 1, computer, player, playerTestSea);
-//        game.attack(4, 2, computer, player, playerTestSea);
-//        game.attack(1, 2, computer, player, playerTestSea);
-//    }
-//
-//    @Test
-//    public void advancedComputerAttackTest_AttackRight() {
-//        secondarySetUp();
-//        System.out.println("****************************************************************************");
-//        assertTrue(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
-//    }
-//
-//    @Test
-//    public void advancedComputerAttackTest_AttackRandomDirection() {
-//        secondarySetUp();
-//        game.attack(6, 3, computer, player, playerTestSea);
-//        game.attack(2, 8, computer, player, playerTestSea);
-//        System.out.println("****************************************************************************");
-//        boolean condition = false;
-//        game.advancedComputerAttack(player, computer, computer.getAttackBoard());
-//        if (playerTestSea[6][2].equals("X") || playerTestSea[7][1].equals(".")) {
-//            condition = true;
-//        }
-//        assertTrue(condition);
-//    }
-//
-//    private void tertiarySetUp() {
-//        secondarySetUp();
-//        game.attack(6, 3, computer, player, playerTestSea);
-//        game.attack(2, 8, computer, player, playerTestSea);
-//        game.attack(2, 6, computer, player, playerTestSea);
-//    }
-//
-//    @Test
-//    public void advancedComputerAttackTest_AttackUp() {
-//        tertiarySetUp();
-//        System.out.println("****************************************************************************");
-//        game.advancedComputerAttack(player, computer, computer.getAttackBoard());
-////        assertTrue(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
-//    }
-//
-//    @Test
-//    public void advancedComputerAttackTest_AttackNext() {   // todo: poprawić, źle działa metoda!!!
-//        tertiarySetUp();
-//        game.attack(2, 5, computer, player, playerTestSea);
-//        System.out.println("****************************************************************************");
-//        assertFalse(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
-//    }
+    @Test
+    public void advancedComputerAttackTest_AttackDown() {
+        game.attack(5, 1, computer, player, playerTestSea);
+        System.out.println("****************************************************************************");
+        assertTrue(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
+    }
+
+    private void secondarySetUp() {
+        game.attack(5, 1, computer, player, playerTestSea);
+        game.attack(4, 2, computer, player, playerTestSea);
+        game.attack(1, 2, computer, player, playerTestSea);
+    }
+
+    @Test
+    public void advancedComputerAttackTest_AttackRight() {
+        secondarySetUp();
+        System.out.println("****************************************************************************");
+        assertTrue(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
+    }
+
+    @Test
+    public void advancedComputerAttackTest_AttackRandomDirection() {
+        secondarySetUp();
+        game.attack(6, 3, computer, player, playerTestSea);
+        game.attack(2, 8, computer, player, playerTestSea);
+        System.out.println("****************************************************************************");
+        boolean condition = false;
+        game.advancedComputerAttack(player, computer, computer.getAttackBoard());
+        if (playerTestSea[6][2].equals("X") || playerTestSea[7][1].equals(".")) {
+            condition = true;
+        }
+        assertTrue(condition);
+    }
+
+    private void tertiarySetUp() {
+        secondarySetUp();
+        game.attack(6, 3, computer, player, playerTestSea);
+        game.attack(2, 8, computer, player, playerTestSea);
+        game.attack(2, 6, computer, player, playerTestSea);
+    }
+
+    @Test
+    public void advancedComputerAttackTest_AttackUp() {
+        tertiarySetUp();
+        System.out.println("****************************************************************************");
+        assertTrue(game.advancedComputerAttack(player, computer, computer.getAttackBoard()));
+    }
 
 }
 
