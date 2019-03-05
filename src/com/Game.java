@@ -267,30 +267,18 @@ public class Game {
     //*******************************************************************************************************
     //*******************************************************************************************************
     //*******************************************************************************************************
-    // todo: switch nie bierze pod uwagę krawędzi planszy z switchInput!!!
     public Boolean advancedComputerAttack(Player player, Player computer, String[][] attackBoard) {
         for (int i = 0; i < attackBoard.length; i++) {
             for (int j = 0; j < attackBoard[i].length; j++) {
                 if (attackBoard[i][j] == null || attackBoard[i][j].equals(".")) {
                     continue;
                 }
-                if (attackBoard[i][j].equals("X") && player.searchByPosition(j, i).getStatus() != Status.SUNK) {
+                if (attackBoard[i][j].equals("X") && (player.searchByPosition(j, i).getStatus() != Status.SUNK)) {
                     int switchInput = switchInputDependingOnSituationAround(j, i, attackBoard);
-                    switch (switchInput) {
-//                        case 4:
-//                        case 11:
-//                        case 21:
-//                            System.out.println("atak na = " + attackBoard[i][j + 1] + ", x = " + (j + 1) + ", y = " + i);
-//                            return attack((j + 1), i, computer, player, player.getSea());
-//                        case 10:
-//                            System.out.println("atak na = " + attackBoard[i + 1][j] + ", x = " + j + ", y = " + (i + 1));
-//                            return attack(j, (i + 1), computer, player, player.getSea());
-//                        case 6:
-//                        case 12:
-//                        case 7:
-//                        case 14:
-//                            return directedComputerAttack(j, i, attackBoard, player, computer, switchInput);
+                    if (switchInput > 7) {
+                        continue;
                     }
+                    return switchRedirectionForComputerAttack(j, i, attackBoard, player, computer, switchInput);
                 }
             }
         }
@@ -311,17 +299,10 @@ public class Game {
      * @return redirected to the advancedComputerAttack method and further to the main attack method.
      * @see com.Game#attack(int, int, Player, Player, String[][])
      * @see com.Game#advancedComputerAttack(Player, Player, String[][])
-     */ // zrefaktoryzować ewentualnie lub usunąć
+     */
     private Boolean randomDirectionAttack(int x, int y, String[][] attackBoard, Player player, Player computer) {
-        int check = 0;
-        if ((y - 1) > 0 && attackBoard[y - 1][x] == null) {
-            check += 1;
-        }
-        if ((x - 1) > 0 && attackBoard[y][x - 1] == null) {
-            check += 2;
-        }
         Random random = new Random();
-        if ((check == 1) || (check == 3) && (random.nextInt(2) == 0)) {
+        if (random.nextInt(2) == 0) {
             System.out.println("Random atak na = " + attackBoard[y - 1][x] + ", x = " + x + ", y = " + (y - 1));
             return attack(x, (y - 1), computer, player, player.getSea());
         } else {
@@ -446,7 +427,7 @@ public class Game {
         return check;
     }
 
-        /**
+    /**
      * A method responsible for checking the position to the left of indicated. Part of grater method
      * switchInputDependingOnSituationAround
      *
@@ -488,8 +469,15 @@ public class Game {
             }
         }
         check += checkLeft(x, y, attackBoard);
-        // wstawić warunki
-        return check;
+        if (check == 91 || check == 74 || check == 81 || check == 122 || check == 112 || check == 65
+                || check == 105 || check == 72) {
+            return 5; // attack <-
+        } else if (check == 148 || check == 130 || check == 52 || check == 140 || check == 62 || check == 138) {
+            return 6; // attack up
+        } else if (check == 92 || check == 94 || check == 84 || check == 102) {
+            return 7;
+        }
+        return 8;
     }
 
     /**
@@ -513,15 +501,17 @@ public class Game {
         } else if (switchInput == 2) {
             System.out.println("atak na = " + attackBoard[y + 1][x] + ", x = " + x + ", y = " + (y + 1));
             return attack(x, (y + 1), computer, player, player.getSea());
-        } else if (switchInput == 3){
+        } else if (switchInput == 3 || switchInput == 5) {
             System.out.println("atak na = " + attackBoard[y][x - 1] + ", x = " + (x - 1) + ", y = " + y);
             return attack((x - 1), y, computer, player, player.getSea());
-        }else if (switchInput == 4) {
+        } else if (switchInput == 4 || switchInput == 6) {
             System.out.println("atak na = " + attackBoard[y - 1][x] + ", x = " + x + ", y = " + (y - 1));
             return attack(x, (y - 1), computer, player, player.getSea());
+        } else if (switchInput == 7) {
+            return randomDirectionAttack(x, y, attackBoard, player, computer);
         }
 
-        return true; // złe - temporary, tu będzie wszystko, co nie pasuje do prostego ataku naokoło
+        return null; // never returned
     }
 
 }
