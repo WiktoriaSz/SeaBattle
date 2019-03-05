@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a20e697b-0f4b-4f25-a1b9-53ae5be46361" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/GameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,32 +45,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="443" column="26" selection-start-line="443" selection-start-column="26" selection-end-line="443" selection-end-column="26" />
+            <state relative-caret-position="256">
+              <caret line="157" column="93" selection-start-line="157" selection-start-column="93" selection-end-line="157" selection-end-column="93" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#117#1994#0" />
+                <element signature="e#117#3010#0" />
                 <element signature="e#3016#3576#0" />
+                <element signature="e#3016#3939#0" />
                 <element signature="e#3945#4553#0" />
+                <element signature="e#3945#4862#0" />
                 <element signature="e#4868#5294#0" />
+                <element signature="e#4868#6082#0" />
                 <element signature="e#6088#6475#0" />
                 <element signature="e#6088#6871#0" />
                 <element signature="e#6877#7117#0" />
-                <element signature="e#6877#7702#0" />
                 <element signature="e#7708#8106#0" />
+                <element signature="e#7708#8617#0" />
                 <element signature="e#8623#9170#0" />
+                <element signature="e#8623#9754#0" />
                 <element signature="e#9760#9952#0" />
+                <element signature="e#9760#10863#0" />
                 <element signature="e#10869#11240#0" />
                 <element signature="e#10869#11532#0" />
+                <element signature="e#11538#12810#0" />
+                <element signature="e#12781#13803#0" />
                 <element signature="e#13482#15388#0" />
-                <element signature="e#15394#15417#0" />
                 <element signature="e#17673#18187#0" />
+                <element signature="e#17673#18716#0" />
                 <element signature="e#18722#19242#0" />
+                <element signature="e#17769#18801#0" />
                 <element signature="e#19760#20272#0" />
+                <element signature="e#18807#19831#0" />
                 <element signature="e#20794#21313#0" />
+                <element signature="e#20794#21824#0" />
+                <element signature="e#20873#22086#0" />
                 <element signature="e#22092#22800#0" />
+                <element signature="e#22092#24220#0" />
               </folding>
             </state>
           </provider>
@@ -118,45 +143,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="165" column="23" lean-forward="true" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
+            <state relative-caret-position="203">
+              <caret line="159" selection-start-line="159" selection-end-line="159" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#870#1063#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/RunBefores.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -191,9 +185,9 @@
         <option value="$PROJECT_DIR$/src/com/Check.java" />
         <option value="$PROJECT_DIR$/src/tests/CheckTest.java" />
         <option value="$PROJECT_DIR$/src/tests/SettingTest.java" />
+        <option value="$PROJECT_DIR$/src/tests/GameTest.java" />
         <option value="$PROJECT_DIR$/src/com/Main.java" />
         <option value="$PROJECT_DIR$/src/com/Game.java" />
-        <option value="$PROJECT_DIR$/src/tests/GameTest.java" />
       </list>
     </option>
   </component>
@@ -252,7 +246,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551821750465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551824414449" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -275,7 +269,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.advancedComputerAttackTest_BackToBasicAttack">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GameTest.advancedComputerAttackTest_AttackNext" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeaBattle" />
       <extension name="coverage">
@@ -303,22 +310,6 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.GameTest" />
       <option name="METHOD_NAME" value="advancedComputerAttackTest_AttackRandomDirection" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.advancedComputerAttackTest_AttackRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SeaBattle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.GameTest" />
-      <option name="METHOD_NAME" value="advancedComputerAttackTest_AttackRight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -358,11 +349,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_BackToBasicAttack" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackNext" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackUp" />
         <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackRandomDirection" />
-        <item itemvalue="JUnit.GameTest.advancedComputerAttackTest_AttackRight" />
       </list>
     </recent_temporary>
   </component>
@@ -403,29 +394,11 @@
       <workItem from="1551536238871" duration="598000" />
       <workItem from="1551622603855" duration="3239000" />
       <workItem from="1551694040553" duration="14401000" />
-      <workItem from="1551806927962" duration="10618000" />
+      <workItem from="1551806927962" duration="13478000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRight - 2019.03.05 at 22h 23m 37s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRight" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRight - 2019.03.05 at 22h 23m 42s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRight" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRight - 2019.03.05 at 22h 24m 52s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRight" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRight - 2019.03.05 at 22h 26m 30s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRight" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRandomDirection - 2019.03.05 at 22h 28m 08s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRandomDirection" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameTest_advancedComputerAttackTest_AttackRandomDirection - 2019.03.05 at 22h 29m 15s.xml">
-      <configuration name="GameTest.advancedComputerAttackTest_AttackRandomDirection" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameTest_advancedComputerAttackTest_AttackUp - 2019.03.05 at 22h 30m 08s.xml">
       <configuration name="GameTest.advancedComputerAttackTest_AttackUp" configurationId="JUnit" />
     </history-entry>
@@ -438,9 +411,27 @@
     <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.03.05 at 22h 31m 43s.xml">
       <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.03.05 at 22h 32m 41s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.03.05 at 22h 32m 54s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.03.05 at 22h 33m 56s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_AttackNext - 2019.03.05 at 22h 35m 32s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_AttackNext" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_BackToBasicAttack - 2019.03.05 at 22h 35m 51s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_BackToBasicAttack" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameTest_advancedComputerAttackTest_BackToBasicAttack - 2019.03.05 at 22h 36m 12s.xml">
+      <configuration name="GameTest.advancedComputerAttackTest_BackToBasicAttack" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="234818000" />
+    <option name="totallyTimeSpent" value="237678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -516,18 +507,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/Main.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Player.java</url>
           <line>66</line>
           <properties />
@@ -535,27 +514,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>216</line>
+          <line>215</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>218</line>
+          <line>217</line>
           <properties />
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>76</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/Game.java</url>
-          <line>183</line>
-          <properties />
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -729,16 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="69" column="9" lean-forward="true" selection-start-line="69" selection-start-column="9" selection-end-line="69" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://H:/Java 8/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -866,42 +823,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="443" column="26" selection-start-line="443" selection-start-column="26" selection-end-line="443" selection-end-column="26" />
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#117#1994#0" />
-            <element signature="e#3016#3576#0" />
-            <element signature="e#3945#4553#0" />
-            <element signature="e#4868#5294#0" />
-            <element signature="e#6088#6475#0" />
-            <element signature="e#6088#6871#0" />
-            <element signature="e#6877#7117#0" />
-            <element signature="e#6877#7702#0" />
-            <element signature="e#7708#8106#0" />
-            <element signature="e#8623#9170#0" />
-            <element signature="e#9760#9952#0" />
-            <element signature="e#10869#11240#0" />
-            <element signature="e#10869#11532#0" />
-            <element signature="e#13482#15388#0" />
-            <element signature="e#15394#15417#0" />
-            <element signature="e#17673#18187#0" />
-            <element signature="e#18722#19242#0" />
-            <element signature="e#19760#20272#0" />
-            <element signature="e#20794#21313#0" />
-            <element signature="e#22092#22800#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="165" column="23" lean-forward="true" selection-start-line="165" selection-start-column="23" selection-end-line="165" selection-end-column="23" />
+          <caret line="146" lean-forward="true" selection-start-line="146" selection-end-line="146" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="157" column="93" selection-start-line="157" selection-start-column="93" selection-end-line="157" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#117#1994#0" />
+            <element signature="e#117#3010#0" />
+            <element signature="e#3016#3576#0" />
+            <element signature="e#3016#3939#0" />
+            <element signature="e#3945#4553#0" />
+            <element signature="e#3945#4862#0" />
+            <element signature="e#4868#5294#0" />
+            <element signature="e#4868#6082#0" />
+            <element signature="e#6088#6475#0" />
+            <element signature="e#6088#6871#0" />
+            <element signature="e#6877#7117#0" />
+            <element signature="e#7708#8106#0" />
+            <element signature="e#7708#8617#0" />
+            <element signature="e#8623#9170#0" />
+            <element signature="e#8623#9754#0" />
+            <element signature="e#9760#9952#0" />
+            <element signature="e#9760#10863#0" />
+            <element signature="e#10869#11240#0" />
+            <element signature="e#10869#11532#0" />
+            <element signature="e#11538#12810#0" />
+            <element signature="e#12781#13803#0" />
+            <element signature="e#13482#15388#0" />
+            <element signature="e#17673#18187#0" />
+            <element signature="e#17673#18716#0" />
+            <element signature="e#18722#19242#0" />
+            <element signature="e#17769#18801#0" />
+            <element signature="e#19760#20272#0" />
+            <element signature="e#18807#19831#0" />
+            <element signature="e#20794#21313#0" />
+            <element signature="e#20794#21824#0" />
+            <element signature="e#20873#22086#0" />
+            <element signature="e#22092#22800#0" />
+            <element signature="e#22092#24220#0" />
           </folding>
         </state>
       </provider>

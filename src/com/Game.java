@@ -147,20 +147,19 @@ public class Game {
      * @param computer a Player object representing the computer player.
      */
     public void gameSequence(Player player, Player computer) {
-        Boolean attackOrder = true;
+        Boolean attackOrder;
 
         while (!winningCondition(player, computer) || !winningCondition(computer, player)) {
-
+            attackOrder = true;
             while (attackOrder) {
                 attackOrder = playerAttack(player, computer);
             }
 
-            attackOrder = computerAttack(player, computer);
-            if (attackOrder) {
-                while (attackOrder) {
-                    attackOrder = advancedComputerAttack(player, computer, computer.getAttackBoard());
-                }
+            attackOrder = advancedComputerAttack(player, computer, computer.getAttackBoard());
+            while (attackOrder) {
+                attackOrder = advancedComputerAttack(player, computer, computer.getAttackBoard());
             }
+
         }
     }
 
@@ -264,9 +263,6 @@ public class Game {
         return attack(x, y, computer, player, player.getSea());
     }
 
-    //*******************************************************************************************************
-    //*******************************************************************************************************
-    //*******************************************************************************************************
     public Boolean advancedComputerAttack(Player player, Player computer, String[][] attackBoard) {
         for (int i = 0; i < attackBoard.length; i++) {
             for (int j = 0; j < attackBoard[i].length; j++) {
@@ -310,44 +306,6 @@ public class Game {
             return attack((x - 1), y, computer, player, player.getSea());
         }
     }
-
-    // todo: podzielić na 2
-//    private Boolean directedComputerAttack(int x, int y, String[][] attackBoard, Player player, Player computer, int switchInput) {
-//        if (switchInput == 6 || switchInput == 12) {
-//            if ((y - 1) > 0 && attackBoard[y - 1][x] == null) {
-//                System.out.println("Directed atak na = " + attackBoard[y - 1][x] + ", x = " + x +
-//                        ", y = " + (y - 1));
-//                return attack(x, (y - 1), computer, player, player.getSea());
-//            } else {
-//                if (attackBoard[y + 2][x] == null) {
-//                    System.out.println("Directed atak na = " + attackBoard[y + 2][x] + ", x = " + x +
-//                            ", y = " + (y + 2));
-//                    return attack(x, (y + 2), computer, player, player.getSea());
-//                } else if (attackBoard[y + 2][x].equals("X")) {
-//                    System.out.println("Directed atak na = " + attackBoard[y + 3][x] + ", x = " + x +
-//                            ", y = " + (y + 3));
-//                    return attack(x, (y + 3), computer, player, player.getSea());
-//                }
-//            }
-//        } else if (switchInput == 7 || switchInput == 11) {
-//            if ((x - 1) > 0 && attackBoard[y][x - 1] == null) {
-//                System.out.println("Directed atak na = " + attackBoard[y][x - 1] + ", x = " + (x - 1) +
-//                        ", y = " + y);
-//                return attack((x - 1), y, computer, player, player.getSea());
-//            } else {
-//                if (attackBoard[y][x + 2] == null) {
-//                    System.out.println("Directed atak na = " + attackBoard[y][x + 2] + ", x = " + (x + 2) +
-//                            ", y = " + y);
-//                    return attack((x + 2), y, computer, player, player.getSea());
-//                } else if (attackBoard[y][x + 2].equals("X")) {
-//                    System.out.println("Directed atak na = " + attackBoard[y][x + 3] + ", x = " + (x + 3) +
-//                            ", y = " + y);
-//                    return attack((x + 3), y, computer, player, player.getSea());
-//                }
-//            }
-//        }
-//        return randomDirectionAttack(x, y, attackBoard, player, computer);
-//    }
 
     /**
      * A method responsible for checking the position up of the indicated. Part of grater method
